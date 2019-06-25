@@ -1,0 +1,9 @@
+package com.selenium.practice;
+
+public class AmazonAutomationPractice {
+
+	public static void main(String[] args) {
+System.setProperty("webdriver.chrome.driver","C:\\Users\\Gautham\\eclipse-workspace\\SeleniumInstall\\JavaPrajectGST\\driver\\chromedriver.exe");
+	}
+
+}

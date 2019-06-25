@@ -1,0 +1,11 @@
+package com.adactin.stepdefinition;
+
+import org.openqa.selenium.WebDriver;
+
+import com.cucumber.runner.TestRunner;
+import com.selenium.baseclass.Cucumber.BaseClassMaven;
+
+public class StepDefinitionAdactIn extends BaseClassMaven {
+
+	public static WebDriver driver=TestRunner.driver;
+}

@@ -1,0 +1,54 @@
+package com.selenium.pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginAdactIn {
+	public WebDriver driver;
+	
+	public LoginAdactIn(WebDriver ldriver) {
+		this.driver=ldriver;
+		PageFactory.initElements(driver, this);
+	}
+	@FindBy(xpath="//input[@id=\"username\"]")
+	private WebElement userName;
+	
+	@FindBy(xpath="//input[@id=\"password\"]")
+	private WebElement passWord;
+	
+	@FindBy(xpath="//select[@id=\"location\"]")
+	private WebElement locationOption;
+	
+	@FindBy(xpath="//select[@id=\"hotels\"]")
+	private WebElement hotelOption;
+	
+	@FindBy(xpath="//input[@id=\"login\"]")
+	private WebElement roomType;
+	
+	@FindBy(xpath="//input[@id=\"login\"]")
+	private WebElement noOfRooms;
+	
+	@FindBy(xpath="//input[@id=\"datepick_in\"]")
+	private WebElement checkInDate;
+	
+	@FindBy(xpath="//input[@id=\"datepick_out\"]")
+	private WebElement checkOutDate;
+	
+	@FindBy(xpath="//input[@id=\"adult_room\"]")
+	private WebElement adultsPerRoom;
+	
+	@FindBy(xpath="//input[@id=\"Submit\"]")
+	private WebElement searchBtn;
+	
+	@FindBy(xpath="//input[@id=\"hotel_name_0\"]")
+	private WebElement hotelCreekValidate;
+	
+	@FindBy(xpath="//input[@id=\"arr_date_0\"]")
+	private WebElement chkInDateValidate;
+	
+	@FindBy(xpath="//input[@id=\"dep_date_0\"]")
+	private WebElement chkOutDateValidate;
+	
+}

@@ -1,0 +1,20 @@
+package com.adactin.stepdefinition;
+
+import org.openqa.selenium.WebDriver;
+
+import com.adactin.helper.PageObjectManager;
+import com.cucumber.runner.TestRunner;
+import com.selenium.baseclass.Cucumber.BaseClassMaven;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class StepDefinitionAdactIn extends BaseClassMaven {
+
+	public static WebDriver driver=TestRunner.driver;
+	
+	PageObjectManager pm=new PageObjectManager(driver);
+	
+	
+}

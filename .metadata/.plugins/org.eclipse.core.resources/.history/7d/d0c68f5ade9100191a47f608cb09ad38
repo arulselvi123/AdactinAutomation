@@ -1,0 +1,129 @@
+package com.scenarios.setpdefinition;
+
+import org.junit.Assert;
+
+import org.openqa.selenium.WebDriver;
+
+import com.cucumber.runner.TestRunner;
+import com.selenium.baseclass.Cucumber.BaseClassMaven;
+import com.selenium.pom.HomePage;
+import com.selenium.pom.LoginPage;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class StepDefinition2 extends BaseClassMaven{
+public static WebDriver driver=TestRunner.driver;
+@Given("^User launch the automation practice application$")
+public void user_launch_the_automation_practice_application() throws Throwable {
+	getUrl("http://automationpractice.com/");
+
+}
+
+@When("^User click on the Signin button in the header$")
+public void user_click_on_the_Signin_button_in_the_header() throws Throwable {
+	oginPage lp=new LoginPage(driver);
+	  clickOnTheElement(lp.getSignIn1());
+
+}
+
+@When("^User enter the email address in the authentication page$")
+public void user_enter_the_email_address_in_the_authentication_page() throws Throwable {
+	 LoginPage lp=new LoginPage(driver);
+	    inputValue(lp.getEmailAddress(), "lakshmipriya.ramprakash@gmail.com");
+
+}
+
+@When("^User enter the password in the authentication page$")
+public void user_enter_the_password_in_the_authentication_page() throws Throwable {
+	LoginPage lp=new LoginPage(driver);
+    inputValue(lp.getPassWd(), "India@143");
+
+}
+
+@When("^User click on the signIn button$")
+public void user_click_on_the_signIn_button() throws Throwable {
+	LoginPage lp=new LoginPage(driver);
+	  clickOnTheElement(lp.getSignIn());
+}
+
+@Then("^User verify the username in the header$")
+public void user_verify_the_username_in_the_header() throws Throwable {
+	LoginPage lp=new LoginPage(driver);
+	  Assert.assertEquals("MY ACCOUNT", getTextOfTheElement(lp.getMyAccount()));
+
+
+}
+
+@When("^User mouse hover on the Women Menu$")
+public void user_mouse_hover_on_the_Women_Menu() throws Throwable {
+
+	LoginPage lp=new LoginPage(driver);
+	mouseHover(lp.getWomenMenuBtn());
+}
+
+@When("^User click on the Blouses option$")
+public void user_click_on_the_Blouses_option() throws Throwable {
+
+	LoginPage lp=new LoginPage(driver);
+	clickOnTheElement(lp.getBlouses());
+
+
+}
+
+@Then("^User Verify the Blouse result in the header$")
+public void user_Verify_the_Blouse_result_in_the_header() throws Throwable {
+
+	LoginPage lp=new LoginPage(driver);
+	Assert.assertEquals("BLOUSES", getTextOfTheElement(lp.getBlouseResult()));
+}
+
+@When("^User click the M Size of the blouse$")
+public void user_click_the_M_Size_of_the_blouse() throws Throwable {
+
+
+}
+
+@When("^User click the White color of the blouse$")
+public void user_click_the_White_color_of_the_blouse() throws Throwable {
+
+
+}
+
+@When("^User click the cotton composition of the blouse$")
+public void user_click_the_cotton_composition_of_the_blouse() throws Throwable {
+
+
+}
+
+@When("^User click the Casual style of the blouse$")
+public void user_click_the_Casual_style_of_the_blouse() throws Throwable {
+
+
+}
+
+@When("^User click the Short Sleeve of the blouse$")
+public void user_click_the_Short_Sleeve_of_the_blouse() throws Throwable {
+
+
+}
+
+@When("^User click the In-Stock check-box of the blouse$")
+public void user_click_the_In_Stock_check_box_of_the_blouse() throws Throwable {
+
+
+}
+
+@When("^User click the Fashion Manufacturer of the blouse$")
+public void user_click_the_Fashion_Manufacturer_of_the_blouse() throws Throwable {
+
+
+}
+
+@When("^User click the New Condition of the blouse$")
+public void user_click_the_New_Condition_of_the_blouse() throws Throwable {
+
+
+}
+}

@@ -1,0 +1,14 @@
+Feature: AdactIn Automation End to End testing
+Test scenarios includes Login, Check-In & Check-Out date
+
+Scenario: To Verify the  valid login details
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button 
+
+
+
+
+
+

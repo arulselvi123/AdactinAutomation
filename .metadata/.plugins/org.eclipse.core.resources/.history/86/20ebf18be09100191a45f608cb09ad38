@@ -1,0 +1,152 @@
+package com.selenium.pom;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage {
+	
+	public WebDriver driver;
+	public LoginPage(WebDriver ldriver) {
+	this.driver=ldriver;
+	PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(xpath="//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")
+	private WebElement signInBtn;
+	
+	public WebElement getSignInBtn() {
+		return signInBtn;
+	}
+	
+	@FindBy(id="email")
+	private WebElement emailAddress;
+	
+	@FindBy(id="passwd")
+	private WebElement passWd;
+	
+	@FindBy(xpath="//*[@id=\"SubmitLogin\"]/span")
+	private WebElement signIn;
+	
+	@FindBy(xpath="//h1[text()=\"My account\"]")
+	private WebElement myAccount;
+	
+	public WebElement getMyAccount() {
+	return myAccount;
+	}
+	
+	//SignOut
+	@FindBy(xpath="//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a")
+	private WebElement signOut;
+	
+	@FindBy(xpath="//a[@title=\"Women\"]")
+	private WebElement womenMenuBtn;
+	
+	public WebElement getWomenMenuBtn() {
+		return womenMenuBtn;
+	}
+	@FindBy(xpath="//a[text()=\"Blouses\"]")
+	private WebElement blouses;
+	
+	public WebElement getBlouses() {
+		return blouses;
+	}
+	@FindBy(xpath="//span[@class=\"cat-name\"]")
+	private WebElement blouseResult;
+	
+	public WebElement getBlouseResult() {
+		return blouseResult;
+
+	}
+	@FindBy(xpath="//img[@title=\"Blouse\"]")
+	private WebElement blouseImage;
+	
+	public WebElement getBlouseImage() {
+		return blouseImage;
+
+	}
+	@FindBy(xpath="//select[@id=\"selectProductSort\"]")
+	private WebElement sortBy;
+	
+	public WebElement getSortBy() {
+		return sortBy;
+
+	}
+	@FindBy(xpath="(//input[@class=\"checkbox\"])[1]")
+	private WebElement blouseSize;
+	
+	public WebElement getBlouseSize() {
+		return blouseSize;
+	}
+	
+	@FindBy(xpath="//span[text()=\"Add to cart\"]")
+	private WebElement adToCart;
+	
+	public WebElement getAdToCart() {
+		return adToCart;
+	}
+	@FindBy(xpath="//img[@title=\"Blouse\"]")
+	private WebElement mouseHoverBlouseImage;
+	
+	public WebElement getMouseHoverBlouseImage1() {
+		return mouseHoverBlouseImage;
+	}
+	@FindBy(xpath="//*[@id=\"layer_cart\"]/div[1]/div[1]/h2")
+	private WebElement successfullyAdToCart;
+	
+	public WebElement getSuccessfullyAdToCart() {
+		return successfullyAdToCart;
+	}
+	@FindBy(xpath="//h1[@id=\"cart_title\"]")
+	private WebElement shoppingCartSummary;
+	
+	public WebElement getShoppingCartSummary() {
+		return shoppingCartSummary;
+	}
+	
+	@FindBy(xpath="//i[@class=\"icon-plus\"]")
+	private WebElement cartQuantity;
+	
+	public WebElement getCartQuantity() {
+		return cartQuantity;
+	}
+	@FindBy(xpath="//h1[text()=\"Addresses\"]")
+	private WebElement addressPageValidate;;
+	
+	public WebElement getAddressPageValidate() {
+		return addressPageValidate;
+	}
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	
+	public WebElement getSignIn1() {
+		return signInBtn;
+	}
+
+
+	public WebElement getEmailAddress() {
+		return emailAddress;
+	}
+
+	public WebElement getPassWd() {
+		return passWd;
+	}
+
+	public WebElement getSignIn() {
+		return signIn;
+	}
+
+	
+	public WebElement getSignOut() {
+		return signOut;
+	}
+	
+}
+
+
+
+

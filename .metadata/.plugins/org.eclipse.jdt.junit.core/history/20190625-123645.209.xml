@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Cucumber" tests="25" started="25" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cucumber.runner.TestRunner" time="30.198">
+    <testsuite name="Feature: AdactIn Automation End to End testing" time="30.198">
+      <testsuite name="Scenario: To Verify Order number is generated in booking confirmation page" time="30.198">
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="3.251"/>
+        <testcase name="When User enter the User-name in the welcome page" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.847"/>
+        <testcase name="And User enter the Password in the welcome page" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="1.438"/>
+        <testcase name="And User click on the Login button" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.805"/>
+        <testcase name="When User select the Location as &quot;Sydney&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.77"/>
+        <testcase name="And User select the hotel as &quot;Hotel Creek&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.964"/>
+        <testcase name="And User select Room type as &quot;Standard&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.505"/>
+        <testcase name="And User select the Number of Rooms as &quot;1 - One&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.914"/>
+        <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.854"/>
+        <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.574"/>
+        <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="1.589"/>
+        <testcase name="And User click on the Search button" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.614"/>
+        <testcase name="And User click on the Radio Button to select the hotel" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="1.331"/>
+        <testcase name="And User click on the Continue Button" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="1.048"/>
+        <testcase name="When User enters first name" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.723"/>
+        <testcase name="And User enters last name" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.783"/>
+        <testcase name="And User enters billing address" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="1.017"/>
+        <testcase name="And User enters 16 digit credit card number" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.724"/>
+        <testcase name="And User selects the card type" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.735"/>
+        <testcase name="And User selects the expiry month" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.704"/>
+        <testcase name="And User selects the expiry year" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.687"/>
+        <testcase name="And User enters the cvv number" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.488"/>
+        <testcase name="And User clicks the book now button" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="5.911"/>
+        <testcase name="Then User confirms that order no is generated or not in Booking Confirmation page" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="1.321"/>
+        <testcase name="And User Logout from Booking Confirmation Page" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="1.601"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

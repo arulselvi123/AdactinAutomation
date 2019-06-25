@@ -1,0 +1,19 @@
+Feature: Automation Practise application end to end testing
+Test scenarios includes Login, Search, order selecting,... etc
+
+Scenario:  Verify the login functionality of the application
+Given User launch the automation practice application
+When User click on the Signin button in the header
+And User enter the email address in the authentication page
+And User enter the password in the authentication page
+And User click on the signIn button
+Then User verify the username in the header 
+
+Scenario: Verfiy the search functionality of the application
+When User enter product name in the search feild
+And User click on the search button
+Then User verify the search result in the search header
+
+
+
+

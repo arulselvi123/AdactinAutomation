@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Cucumber" tests="15" started="15" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cucumber.runner.TestRunner" time="14.24">
+    <testsuite name="Feature: AdactIn Automation End to End testing" time="14.24">
+      <testsuite name="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="14.24">
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="1.197"/>
+        <testcase name="When User enter the User-name in the welcome page" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.773"/>
+        <testcase name="And User enter the Password in the welcome page" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="1.457"/>
+        <testcase name="And User click on the Login button" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.739"/>
+        <testcase name="When User select the Location as &quot;Sydney&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.552"/>
+        <testcase name="And User select the hotel as &quot;Hotel Creek&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.532"/>
+        <testcase name="And User select Room type as &quot;Standard&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.567"/>
+        <testcase name="And User select the Number of Rooms as &quot;2 - Two&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.933"/>
+        <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.9"/>
+        <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.495"/>
+        <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="1.758"/>
+        <testcase name="And User click on the Search button" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.628"/>
+        <testcase name="And User click on the Radio Button to select the hotel" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="1.463"/>
+        <testcase name="And User click on the Continue Button" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.438"/>
+        <testcase name="Then User verify the Final price in float including gst" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="1.808"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

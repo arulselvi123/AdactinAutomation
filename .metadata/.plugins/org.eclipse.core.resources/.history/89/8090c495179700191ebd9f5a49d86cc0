@@ -1,0 +1,26 @@
+package com.testng.TestNGProject;
+
+import org.testng.annotations.Test;
+
+import com.beust.jcommander.Parameters;
+
+public class Parameter {
+	@Test
+	@Parameters ({"Username","Password"})
+	public void sample7(String name,String password) {
+		System.out.println(" Username is  "+name);  
+		System.out.println(" Password is  "+password);  
+	}
+	@Test 
+
+	public void sample8() {
+		System.out.println(" AfterTest  ");  
+
+	}
+	@Test
+
+	public void sample1() {
+		System.out.println(" BeforeClass  ");  
+
+	}
+}

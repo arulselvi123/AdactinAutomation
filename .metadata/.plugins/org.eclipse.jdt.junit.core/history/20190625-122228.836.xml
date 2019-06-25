@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Cucumber" tests="1" started="0" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cucumber.runner.TestRunner" incomplete="true">
+    <testsuite name="Feature: AdactIn Automation End to End testing" incomplete="true">
+      <testcase name="Scenario Outline: To Verify Order number is generated in booking confirmation page" classname="Scenario Outline: To Verify Order number is generated in booking confirmation page" incomplete="true"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Cucumber" tests="15" started="15" failures="0" errors="0" ignored="15">
+  <testsuite name="com.cucumber.runner.TestRunner" time="1.811">
+    <testsuite name="Feature: AdactIn Automation End to End testing" time="1.811">
+      <testsuite name="Scenario Outline: To verify whether the data displayed is same as the selected data in Book hotel page" time="1.811">
+        <testsuite name="Examples:" time="1.811">
+          <testsuite name="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="1.81">
+            <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.018" ignored="true"/>
+            <testcase name="When User enter the User-name in the welcome page" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.01" ignored="true"/>
+            <testcase name="And User enter the Password in the welcome page" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.005" ignored="true"/>
+            <testcase name="And User click on the Login button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.005" ignored="true"/>
+            <testcase name="When User select the Location  '&quot;Sydney&quot;'" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.009" ignored="true"/>
+            <testcase name="And User select the hotel  '&quot;Hotel Creek&quot;'" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.004" ignored="true"/>
+            <testcase name="And User select Room type  '&quot;Standard&quot;'" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.006" ignored="true"/>
+            <testcase name="And User select the Number of Rooms  &quot;2-Two&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.022" ignored="true"/>
+            <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.005" ignored="true"/>
+            <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.006" ignored="true"/>
+            <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.004" ignored="true"/>
+            <testcase name="And User click on the Search button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.007" ignored="true"/>
+            <testcase name="And User click on the Radio Button to select the hotel" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.003" ignored="true"/>
+            <testcase name="And User click on the Continue Button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.009" ignored="true"/>
+            <testcase name="Then User verify that  all data are same in booking confirmation page '&quot;Hotel Creek&quot;' '&quot;Sydney&quot;' '&quot;Standard&quot;' '&quot;25/06/2019&quot;' '&quot;26/06/2019&quot;' '2' '1' '&quot;No Children&quot;'" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="1.696" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

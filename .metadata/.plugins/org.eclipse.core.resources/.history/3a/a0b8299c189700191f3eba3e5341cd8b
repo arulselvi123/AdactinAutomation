@@ -1,0 +1,79 @@
+Feature: AdactIn Automation End to End testing
+Test scenarios includes Login, Check-In & Check-Out date
+
+Scenario: To Verify the  valid login details
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button 
+
+
+Scenario: To verify whether the check-out date field accepts a later date than check- in date.
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button 
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as today plus 7 date 
+And User select the Check-out-Date as today plus 5 date
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+Then User Verify the system saying "Check-In Date shall be before than Check-Out Date"
+
+@tc_3
+Scenario: To check if error is reported if check-out date field 
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as "01/07/2019"
+And User select the Check-out-Date as "28/06/2019"
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+Then User Verify the system saying "Check-Out Date shall be after than Check-In Date"
+
+@tc_4
+Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+Then User verify the selected Location should be same as Sydney in Select Hotel page
+
+@tc_5
+Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+Then User verify the Check-In  and Check-Out dates should be same as  in Select Hotel page
+
+
+
+
+
+
+
+

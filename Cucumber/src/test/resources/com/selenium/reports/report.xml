@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="15.090616">
+<testcase classname="AdactIn Automation End to End testing" name="To check Hotel name, Location, room type, Total Day, price per night are same in Booking confirmation page as they were selected in previous screen" time="15.090616">
+<system-out><![CDATA[Given User launch the AdactIn Hotel Reservation application using URL as in the test data.passed
+When User enter the User-name in the welcome page...........................passed
+And User enter the Password in the welcome page.............................passed
+And User click on the Login button..........................................passed
+When User select the Location  '"Sydney"'...................................passed
+And User select the hotel  '"Hotel Creek"'..................................passed
+And User select Room type  '"Standard"'.....................................passed
+And User select the Number of Rooms  '2'....................................passed
+And User select the Check-in-Date as "25/06/2019"...........................passed
+And User select the Check-out-Date as "26/06/2019"..........................passed
+And User select the Adult per Room as "1 - One".............................passed
+And User click on the Search button.........................................passed
+And User click on the Radio Button to select the hotel......................passed
+And User click on the Continue Button.......................................passed
+Then Verify the total data are same in booking confirmation page '"Sydney"' '"Hotel Creek"' '"Standard"' '"AUD $ 125"' '1'.passed
+]]></system-out>
+</testcase>
+</testsuite>

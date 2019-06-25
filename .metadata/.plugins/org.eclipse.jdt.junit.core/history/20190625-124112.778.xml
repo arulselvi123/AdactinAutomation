@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Cucumber" tests="212" started="212" failures="0" errors="4" ignored="210">
+  <testsuite name="com.cucumber.runner.TestRunner" time="2.592">
+    <testsuite name="Feature: AdactIn Automation End to End testing" time="2.592">
+      <testsuite name="Scenario: To Verify the  valid login details" time="0.141">
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="Scenario: To Verify the  valid login details" time="0.111" ignored="true"/>
+        <testcase name="When User enter the User-name in the welcome page" classname="Scenario: To Verify the  valid login details" time="0.013" ignored="true"/>
+        <testcase name="And User enter the Password in the welcome page" classname="Scenario: To Verify the  valid login details" time="0.008" ignored="true"/>
+        <testcase name="And User click on the Login button" classname="Scenario: To Verify the  valid login details" time="0.009" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.114">
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.007" ignored="true"/>
+        <testcase name="When User enter the User-name in the welcome page" classname="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.007" ignored="true"/>
+        <testcase name="And User enter the Password in the welcome page" classname="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.008" ignored="true"/>
+        <testcase name="And User click on the Login button" classname="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.008" ignored="true"/>
+        <testcase name="When User select the Location as &quot;Sydney&quot;" classname="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.019" ignored="true"/>
+        <testcase name="And User select the hotel as &quot;Hotel Creek&quot;" classname="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.007" ignored="true"/>
+        <testcase name="And User select Room type as &quot;Standard&quot;" classname="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.013" ignored="true"/>
+        <testcase name="And User select the Number of Rooms as &quot;1 - One&quot;" classname="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.007" ignored="true"/>
+        <testcase name="And User select the Check-in-Date as today plus 7 date" classname="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.006" ignored="true"/>
+        <testcase name="And User select the Check-out-Date as today plus 5 date" classname="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.006" ignored="true"/>
+        <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.012" ignored="true"/>
+        <testcase name="And User click on the Search button" classname="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.008" ignored="true"/>
+        <testcase name="Then User Verify the system saying &quot;Check-In Date shall be before than Check-Out Date&quot;" classname="Scenario: To verify whether the check-out date field accepts a later date than check- in date." time="0.005" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: To check if error is reported if check-out date field" time="0.073">
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="Scenario: To check if error is reported if check-out date field" time="0.005" ignored="true"/>
+        <testcase name="When User enter the User-name in the welcome page" classname="Scenario: To check if error is reported if check-out date field" time="0.005" ignored="true"/>
+        <testcase name="And User enter the Password in the welcome page" classname="Scenario: To check if error is reported if check-out date field" time="0.005" ignored="true"/>
+        <testcase name="And User click on the Login button" classname="Scenario: To check if error is reported if check-out date field" time="0.005" ignored="true"/>
+        <testcase name="When User select the Location as &quot;Sydney&quot;" classname="Scenario: To check if error is reported if check-out date field" time="0.006" ignored="true"/>
+        <testcase name="And User select the hotel as &quot;Hotel Creek&quot;" classname="Scenario: To check if error is reported if check-out date field" time="0.006" ignored="true"/>
+        <testcase name="And User select Room type as &quot;Standard&quot;" classname="Scenario: To check if error is reported if check-out date field" time="0.006" ignored="true"/>
+        <testcase name="And User select the Number of Rooms as &quot;1 - One&quot;" classname="Scenario: To check if error is reported if check-out date field" time="0.006" ignored="true"/>
+        <testcase name="And User select the Check-in-Date as &quot;01/07/2019&quot;" classname="Scenario: To check if error is reported if check-out date field" time="0.004" ignored="true"/>
+        <testcase name="And User select the Check-out-Date as &quot;28/06/2019&quot;" classname="Scenario: To check if error is reported if check-out date field" time="0.005" ignored="true"/>
+        <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="Scenario: To check if error is reported if check-out date field" time="0.005" ignored="true"/>
+        <testcase name="And User click on the Search button" classname="Scenario: To check if error is reported if check-out date field" time="0.007" ignored="true"/>
+        <testcase name="Then User Verify the system saying &quot;Check-Out Date shall be after than Check-In Date&quot;" classname="Scenario: To check if error is reported if check-out date field" time="0.006" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.074">
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.006" ignored="true"/>
+        <testcase name="When User enter the User-name in the welcome page" classname="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.005" ignored="true"/>
+        <testcase name="And User enter the Password in the welcome page" classname="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.012" ignored="true"/>
+        <testcase name="And User click on the Login button" classname="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.005" ignored="true"/>
+        <testcase name="When User select the Location as &quot;Sydney&quot;" classname="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.005" ignored="true"/>
+        <testcase name="And User select the hotel as &quot;Hotel Creek&quot;" classname="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.005" ignored="true"/>
+        <testcase name="And User select Room type as &quot;Standard&quot;" classname="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.004" ignored="true"/>
+        <testcase name="And User select the Number of Rooms as &quot;1 - One&quot;" classname="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.004" ignored="true"/>
+        <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.005" ignored="true"/>
+        <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.005" ignored="true"/>
+        <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.004" ignored="true"/>
+        <testcase name="And User click on the Search button" classname="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.005" ignored="true"/>
+        <testcase name="Then User verify the selected Location should be same as Sydney in Select Hotel page" classname="Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel" time="0.009" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.079">
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.006" ignored="true"/>
+        <testcase name="When User enter the User-name in the welcome page" classname="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.005" ignored="true"/>
+        <testcase name="And User enter the Password in the welcome page" classname="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.01" ignored="true"/>
+        <testcase name="And User click on the Login button" classname="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.005" ignored="true"/>
+        <testcase name="When User select the Location as &quot;Sydney&quot;" classname="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.006" ignored="true"/>
+        <testcase name="And User select the hotel as &quot;Hotel Creek&quot;" classname="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.006" ignored="true"/>
+        <testcase name="And User select Room type as &quot;Standard&quot;" classname="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.006" ignored="true"/>
+        <testcase name="And User select the Number of Rooms as &quot;1 - One&quot;" classname="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.005" ignored="true"/>
+        <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.01" ignored="true"/>
+        <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.005" ignored="true"/>
+        <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.006" ignored="true"/>
+        <testcase name="And User click on the Search button" classname="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.006" ignored="true"/>
+        <testcase name="Then User verify the Check-In  and Check-Out dates should be same as  in Select Hotel page" classname="Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel" time="0.003" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.173">
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.023" ignored="true"/>
+        <testcase name="When User enter the User-name in the welcome page" classname="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.022" ignored="true"/>
+        <testcase name="And User enter the Password in the welcome page" classname="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.018" ignored="true"/>
+        <testcase name="And User click on the Login button" classname="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.011" ignored="true"/>
+        <testcase name="When User select the Location as &quot;Sydney&quot;" classname="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.006" ignored="true"/>
+        <testcase name="And User select the hotel as &quot;Hotel Creek&quot;" classname="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.011" ignored="true"/>
+        <testcase name="And User select Room type as &quot;Standard&quot;" classname="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.005" ignored="true"/>
+        <testcase name="And User select the Number of Rooms as &quot;1 - One&quot;" classname="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.004" ignored="true"/>
+        <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.022" ignored="true"/>
+        <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.004" ignored="true"/>
+        <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.014" ignored="true"/>
+        <testcase name="And User click on the Search button" classname="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.003" ignored="true"/>
+        <testcase name="Then Verify that no-of- rooms is reflected according to the number of rooms selected in search hotel page." classname="Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page" time="0.028" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.184">
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.006" ignored="true"/>
+        <testcase name="When User enter the User-name in the welcome page" classname="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.005" ignored="true"/>
+        <testcase name="And User enter the Password in the welcome page" classname="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.035" ignored="true"/>
+        <testcase name="And User click on the Login button" classname="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.039" ignored="true"/>
+        <testcase name="When User select the Location as &quot;Sydney&quot;" classname="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.006" ignored="true"/>
+        <testcase name="And User select the hotel as &quot;Hotel Creek&quot;" classname="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.004" ignored="true"/>
+        <testcase name="And User select Room type as &quot;Standard&quot;" classname="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.039" ignored="true"/>
+        <testcase name="And User select the Number of Rooms as &quot;1 - One&quot;" classname="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.006" ignored="true"/>
+        <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.012" ignored="true"/>
+        <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.011" ignored="true"/>
+        <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.004" ignored="true"/>
+        <testcase name="And User click on the Search button" classname="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.014" ignored="true"/>
+        <testcase name="Then Verify that room type reflected is the same as selected in search hotel page." classname="Scenario: To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page" time="0.003" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: To verify whether the total price (excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.071">
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data(Scenario: To verify whether the total price " classname="excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.004" ignored="true"/>
+        <testcase name="When User enter the User-name in the welcome page(Scenario: To verify whether the total price " classname="excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.004" ignored="true"/>
+        <testcase name="And User enter the Password in the welcome page(Scenario: To verify whether the total price " classname="excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.004" ignored="true"/>
+        <testcase name="And User click on the Login button(Scenario: To verify whether the total price " classname="excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.004" ignored="true"/>
+        <testcase name="When User select the Location as &quot;Sydney&quot;(Scenario: To verify whether the total price " classname="excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.009" ignored="true"/>
+        <testcase name="And User select the hotel as &quot;Hotel Creek&quot;(Scenario: To verify whether the total price " classname="excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.004" ignored="true"/>
+        <testcase name="And User select Room type as &quot;Standard&quot;(Scenario: To verify whether the total price " classname="excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.005" ignored="true"/>
+        <testcase name="And User select the Number of Rooms as &quot;1 - One&quot;(Scenario: To verify whether the total price " classname="excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.011" ignored="true"/>
+        <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;(Scenario: To verify whether the total price " classname="excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.009" ignored="true"/>
+        <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;(Scenario: To verify whether the total price " classname="excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.007" ignored="true"/>
+        <testcase name="And User select the Adult per Room as &quot;1 - One&quot;(Scenario: To verify whether the total price " classname="excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.004" ignored="true"/>
+        <testcase name="And User click on the Search button(Scenario: To verify whether the total price " classname="excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.004" ignored="true"/>
+        <testcase name="Then Verify that total- price(excl.GST) is being calculated as (price-per-night*no- of-rooms*no-of-days)(Scenario: To verify whether the total price " classname="excl.GST) is calculated as “price per night * no. of nights* no of rooms”." time="0.002" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: To verify when pressed, logout button logs out from the application." time="0.553">
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.012" ignored="true"/>
+        <testcase name="When User enter the User-name in the welcome page" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.02" ignored="true"/>
+        <testcase name="And User enter the Password in the welcome page" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.004" ignored="true"/>
+        <testcase name="And User click on the Login button" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.06" ignored="true"/>
+        <testcase name="When User select the Location as &quot;Sydney&quot;" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.008" ignored="true"/>
+        <testcase name="And User select the hotel as &quot;Hotel Creek&quot;" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.269" ignored="true"/>
+        <testcase name="And User select Room type as &quot;Standard&quot;" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.014" ignored="true"/>
+        <testcase name="And User select the Number of Rooms as &quot;1 - One&quot;" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.004" ignored="true"/>
+        <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.005" ignored="true"/>
+        <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.006" ignored="true"/>
+        <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.004" ignored="true"/>
+        <testcase name="And User click on the Search button" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.003" ignored="true"/>
+        <testcase name="And User click on the Radio Button to select the hotel" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.004" ignored="true"/>
+        <testcase name="And User click on the Continue Button" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.005" ignored="true"/>
+        <testcase name="When User enters first name" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.006" ignored="true"/>
+        <testcase name="And User enters last name" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.004" ignored="true"/>
+        <testcase name="And User enters billing address" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.007" ignored="true"/>
+        <testcase name="And User enters 16 digit credit card number" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.003" ignored="true"/>
+        <testcase name="And User selects the card type" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.004" ignored="true"/>
+        <testcase name="And User selects the expiry month" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.014" ignored="true"/>
+        <testcase name="And User selects the expiry year" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.003" ignored="true"/>
+        <testcase name="And User enters the cvv number" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.023" ignored="true"/>
+        <testcase name="And User clicks the book now button" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.022" ignored="true"/>
+        <testcase name="When User clicks the logout button in the booking confirmation page" classname="Scenario: To verify when pressed, logout button logs out from the application." time="0.043" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.158">
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.002" ignored="true"/>
+        <testcase name="When User enter the User-name in the welcome page" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.007" ignored="true"/>
+        <testcase name="And User enter the Password in the welcome page" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.002" ignored="true"/>
+        <testcase name="And User click on the Login button" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.004" ignored="true"/>
+        <testcase name="When User select the Location as &quot;Sydney&quot;" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.015" ignored="true"/>
+        <testcase name="And User select the hotel as &quot;Hotel Creek&quot;" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.003" ignored="true"/>
+        <testcase name="And User select Room type as &quot;Standard&quot;" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.018" ignored="true"/>
+        <testcase name="And User select the Number of Rooms as &quot;1 - One&quot;" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.004" ignored="true"/>
+        <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.004" ignored="true"/>
+        <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.005" ignored="true"/>
+        <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.004" ignored="true"/>
+        <testcase name="And User click on the Search button" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.005" ignored="true"/>
+        <testcase name="And User click on the Radio Button to select the hotel" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.003" ignored="true"/>
+        <testcase name="And User click on the Continue Button" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.003" ignored="true"/>
+        <testcase name="Then Verify the Total price is calculated including GST" classname="Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page" time="0.077" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario Outline: To check Hotel name, Location, room type, Total Day, price per night are same in Booking confirmation page as they were selected in previous screen" time="0.118">
+        <testsuite name="Examples:" time="0.118">
+          <testsuite name="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD $ 125&quot; | 1 |" time="0.118">
+            <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.007" ignored="true"/>
+            <testcase name="When User enter the User-name in the welcome page" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.003" ignored="true"/>
+            <testcase name="And User enter the Password in the welcome page" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.003" ignored="true"/>
+            <testcase name="And User click on the Login button" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.004" ignored="true"/>
+            <testcase name="When User select the Location  '&quot;Sydney&quot;'" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.003" ignored="true"/>
+            <testcase name="And User select the hotel  '&quot;Hotel Creek&quot;'" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.003" ignored="true"/>
+            <testcase name="And User select Room type  '&quot;Standard&quot;'" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.044" ignored="true"/>
+            <testcase name="And User select the Number of Rooms  '2'" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.003" ignored="true"/>
+            <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.003" ignored="true"/>
+            <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.003" ignored="true"/>
+            <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.003" ignored="true"/>
+            <testcase name="And User click on the Search button" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.002" ignored="true"/>
+            <testcase name="And User click on the Radio Button to select the hotel" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.024" ignored="true"/>
+            <testcase name="And User click on the Continue Button" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.009" ignored="true"/>
+            <testcase name="Then Verify the total data are same in booking confirmation page '&quot;Sydney&quot;' '&quot;Hotel Creek&quot;' '&quot;Standard&quot;' '&quot;AUD $ 125&quot;' '1'" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | 1 |" time="0.004" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+      <testsuite name="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.061">
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.003" ignored="true"/>
+        <testcase name="When User enter the User-name in the welcome page" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.002" ignored="true"/>
+        <testcase name="And User enter the Password in the welcome page" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.002" ignored="true"/>
+        <testcase name="And User click on the Login button" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.002" ignored="true"/>
+        <testcase name="When User select the Location as &quot;Sydney&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.002" ignored="true"/>
+        <testcase name="And User select the hotel as &quot;Hotel Creek&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.003" ignored="true"/>
+        <testcase name="And User select Room type as &quot;Standard&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.003" ignored="true"/>
+        <testcase name="And User select the Number of Rooms as &quot;1 - One&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.003" ignored="true"/>
+        <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.002" ignored="true"/>
+        <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.003" ignored="true"/>
+        <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.003" ignored="true"/>
+        <testcase name="And User click on the Search button" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.004" ignored="true"/>
+        <testcase name="And User click on the Radio Button to select the hotel" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.006" ignored="true"/>
+        <testcase name="And User click on the Continue Button" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.007" ignored="true"/>
+        <testcase name="Then User verify the Final price in float including gst" classname="Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page" time="0.015" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario Outline: To verify whether the data displayed is same as the selected data in Book hotel page" time="0.21">
+        <testsuite name="Examples:" time="0.21">
+          <testsuite name="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.21" incomplete="true">
+            <error>cucumber.api.PendingException: TODO: implement me&#13;
+	at cucumber.runtime.junit.JUnitReporter.addFailure(JUnitReporter.java:150)&#13;
+	at cucumber.runtime.junit.JUnitReporter.addFailureOrIgnoreStep(JUnitReporter.java:138)&#13;
+	at cucumber.runtime.junit.JUnitReporter.result(JUnitReporter.java:98)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:282)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+&#13;
+</error>
+            <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.003" ignored="true"/>
+            <testcase name="When User enter the User-name in the welcome page" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.002" ignored="true"/>
+            <testcase name="And User enter the Password in the welcome page" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.004" ignored="true"/>
+            <testcase name="And User click on the Login button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.003" ignored="true"/>
+            <testcase name="When User select the Location as &quot;Sydney&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.003" ignored="true"/>
+            <testcase name="And User select the hotel as &quot;Hotel Creek&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.003" ignored="true"/>
+            <testcase name="And User select Room type as &quot;Standard&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.006" ignored="true"/>
+            <testcase name="And User select the Number of Rooms as &quot;1 - One&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.006" ignored="true"/>
+            <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.007" ignored="true"/>
+            <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.004" ignored="true"/>
+            <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.002" ignored="true"/>
+            <testcase name="And User click on the Search button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.003" ignored="true"/>
+            <testcase name="And User click on the Radio Button to select the hotel" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.004" ignored="true"/>
+            <testcase name="And User click on the Continue Button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.008" ignored="true"/>
+            <testcase name="When User enters first name" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.003" ignored="true"/>
+            <testcase name="And User enters last name" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.006" ignored="true"/>
+            <testcase name="And User enters billing address" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.003" ignored="true"/>
+            <testcase name="And User enters 16 digit credit card number" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.005" ignored="true"/>
+            <testcase name="And User selects the card type" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.006" ignored="true"/>
+            <testcase name="And User selects the expiry month" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.003" ignored="true"/>
+            <testcase name="And User selects the expiry year" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.02" ignored="true"/>
+            <testcase name="And User enters the cvv number" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.027" ignored="true"/>
+            <testcase name="And User clicks the book now button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.002" ignored="true"/>
+            <testcase name="Then User verify that  all data are same in booking confirmation page '&quot;Hotel Creek&quot;' '&quot;Sydney&quot;' '&quot;Standard&quot;' '&quot;25/06/2019&quot;' '&quot;26/06/2019&quot;' '2' '1' '&quot;No Children&quot;'" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.077">
+              <error>cucumber.api.PendingException: TODO: implement me&#13;
+	at cucumber.runtime.junit.JUnitReporter.addFailure(JUnitReporter.java:150)&#13;
+	at cucumber.runtime.junit.JUnitReporter.addFailureOrIgnoreStep(JUnitReporter.java:138)&#13;
+	at cucumber.runtime.junit.JUnitReporter.result(JUnitReporter.java:98)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:282)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+&#13;
+</error>
+            </testcase>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+      <testsuite name="Scenario: To Verify Order number is generated in booking confirmation page" time="0.132" incomplete="true">
+        <error>cucumber.api.PendingException: TODO: implement me&#13;
+	at cucumber.runtime.junit.JUnitReporter.addFailure(JUnitReporter.java:150)&#13;
+	at cucumber.runtime.junit.JUnitReporter.addFailureOrIgnoreStep(JUnitReporter.java:138)&#13;
+	at cucumber.runtime.junit.JUnitReporter.result(JUnitReporter.java:98)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:282)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+&#13;
+</error>
+        <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.0" ignored="true"/>
+        <testcase name="When User enter the User-name in the welcome page" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.003" ignored="true"/>
+        <testcase name="And User enter the Password in the welcome page" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.004" ignored="true"/>
+        <testcase name="And User click on the Login button" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.005" ignored="true"/>
+        <testcase name="When User select the Location as &quot;Sydney&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.003" ignored="true"/>
+        <testcase name="And User select the hotel as &quot;Hotel Creek&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.005" ignored="true"/>
+        <testcase name="And User select Room type as &quot;Standard&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.003" ignored="true"/>
+        <testcase name="And User select the Number of Rooms as &quot;1 - One&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.028" ignored="true"/>
+        <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.004" ignored="true"/>
+        <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.002" ignored="true"/>
+        <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.006" ignored="true"/>
+        <testcase name="And User click on the Search button" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.004" ignored="true"/>
+        <testcase name="And User click on the Radio Button to select the hotel" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.003" ignored="true"/>
+        <testcase name="And User click on the Continue Button" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.002" ignored="true"/>
+        <testcase name="When User enters first name" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.003" ignored="true"/>
+        <testcase name="And User enters last name" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.013" ignored="true"/>
+        <testcase name="And User enters billing address" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.005" ignored="true"/>
+        <testcase name="And User enters 16 digit credit card number" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.003" ignored="true"/>
+        <testcase name="And User selects the card type" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.023" ignored="true"/>
+        <testcase name="And User selects the expiry month" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.003" ignored="true"/>
+        <testcase name="And User selects the expiry year" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.003" ignored="true"/>
+        <testcase name="And User enters the cvv number" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.003" ignored="true"/>
+        <testcase name="And User clicks the book now button" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.002" ignored="true"/>
+        <testcase name="Then User confirms that order no is generated or not" classname="Scenario: To Verify Order number is generated in booking confirmation page" time="0.002">
+          <error>cucumber.api.PendingException: TODO: implement me&#13;
+	at cucumber.runtime.junit.JUnitReporter.addFailure(JUnitReporter.java:150)&#13;
+	at cucumber.runtime.junit.JUnitReporter.addFailureOrIgnoreStep(JUnitReporter.java:138)&#13;
+	at cucumber.runtime.junit.JUnitReporter.result(JUnitReporter.java:98)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:282)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+&#13;
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,42 @@
+package com.cucumber.runner;
+
+import org.junit.BeforeClass;
+
+
+
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+
+import com.adactin.helper.FileReaderManager;
+import com.selenium.baseclass.Cucumber.BaseClassMaven;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="src\\test\\java\\com\\adactin\\feature\\",
+glue="com.adactin.stepdefinition",
+dryRun=true,strict=true)
+
+public class TestRunner {
+public static WebDriver driver;
+
+@BeforeClass
+public static void setup() throws Exception, Throwable {
+driver=BaseClassMaven.browserLaunch("Chrome");
+String browser = FileReaderManager.getInstance().getCr().getBrowser();
+
+}
+	
+public static void tearDown() {
+//driver.quit();
+}
+
+}
+
+/*plugin= {"pretty",
+		"html:src\\test\\resource\\com\\selenium\\reports\\",
+		"json:src\\test\\resource\\com\\selenium\\reports\\report.json",
+		"junit:src\\test\\resource\\com\\selenium\\reports\\report.xml"
+		}*/
+

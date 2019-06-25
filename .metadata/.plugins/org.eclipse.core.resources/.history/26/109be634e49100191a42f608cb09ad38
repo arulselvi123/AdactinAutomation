@@ -1,0 +1,53 @@
+package com.selenium.pom;
+
+	import org.openqa.selenium.WebDriver;
+	import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.support.FindBy;
+	import org.openqa.selenium.support.PageFactory;
+
+	public class LoginPage {
+		
+		public  WebDriver driver;
+		public LoginPage(WebDriver ldriver) {
+			this.driver=ldriver;
+			PageFactory.initElements(driver, this);
+			
+		}
+		
+		
+		@FindBy(xpath="//a[@class='login']")
+		private WebElement signin;
+		
+		@FindBy(id="email")
+		private WebElement EmailID;
+		
+		@FindBy(id="passwd")
+		private WebElement password;
+		
+		@FindBy(xpath="//button[@id='SubmitLogin']/span")
+		private WebElement accountsignin;
+		
+		@FindBy(xpath="//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a/span")
+		private WebElement accountname;
+		
+		
+		
+		public WebElement getSignin() {
+			return signin;
+		}
+		public WebElement getEmailID() {
+			return EmailID;
+		}
+		public WebElement getPassword() {
+			return password;
+		}
+		public WebElement getAccountsignin() {
+			return accountsignin;
+		}
+		public WebElement getAccountname() {
+			return accountname;
+		}
+		
+	}
+
+

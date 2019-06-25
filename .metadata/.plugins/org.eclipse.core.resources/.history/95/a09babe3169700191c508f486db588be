@@ -1,0 +1,327 @@
+Feature: AdactIn Automation End to End testing
+Test scenarios includes Login, Check-In & Check-Out date
+
+@TC-1
+Scenario: To Verify the  valid login details
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+
+@TC-2
+Scenario: To verify whether the check-out date field accepts a later date than check- in date.
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button 
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as today plus 7 date 
+And User select the Check-out-Date as today plus 5 date
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+Then User Verify the system saying "Check-In Date shall be before than Check-Out Date"
+
+@TC-3
+Scenario: To check if error is reported if check-out date field 
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as "01/07/2019"
+And User select the Check-out-Date as "28/06/2019"
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+Then User Verify the system saying "Check-Out Date shall be after than Check-In Date"
+
+@TC-4
+Scenario: To Verify Whether location in Select Hotel page are displayed according to the location selected in Search hotel
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+Then User verify the selected Location should be same as Sydney in Select Hotel page
+
+@TC-5
+Scenario: To Verify Whether Check-In date and Check-Out date in Select Hotel page are displayed according to the date selected in Search hotel
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+Then User verify the Check-In  and Check-Out dates should be same as  in Select Hotel page
+
+@TC-6 
+Scenario: To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+Then Verify that no-of- rooms is reflected according to the number of rooms selected in search hotel page.
+
+@TC-7
+Scenario:To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+Then Verify that room type reflected is the same as selected in search hotel page.
+
+@TC-8
+Scenario: To verify whether the total price (excl.GST) is calculated as “price per night * no. of nights* no of rooms”.
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+Then Verify that total- price(excl.GST) is being calculated as (price-per-night*no- of-rooms*no-of-days)
+
+@TC-9
+Scenario: To verify when pressed, logout button logs out from the application.
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+And User click on the Radio Button to select the hotel
+And User click on the Continue Button
+When User enters first name
+And User enters last name
+And User enters billing address
+And User enters 16 digit credit card number
+And User selects the card type
+And User selects the expiry month
+And User selects the expiry year
+And User enters the cvv number
+And User clicks the book now button
+When User clicks the logout button in the booking confirmation page
+
+
+
+@TC-10
+Scenario: To check correct total price is being calculated as “price per night*no of days*no of rooms in Book a hotel page
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+And User click on the Radio Button to select the hotel
+And User click on the Continue Button
+Then Verify the Total price is calculated including GST
+
+
+@TC-11
+Scenario Outline: To check Hotel name, Location, room type, Total Day, price per night are same in Booking confirmation page as they were selected in previous screen
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location  '<Location>' 
+And User select the hotel  '<Hotel Name>'
+And User select Room type  '<Room Type>'
+And User select the Number of Rooms  '<No Of Rooms>' 
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+And User click on the Radio Button to select the hotel
+And User click on the Continue Button
+Then Verify the total data are same in booking confirmation page '<Location>' '<Hotel Name>' '<Room Type>' '<Price Per Night>' '<No Of Days>' 
+
+Examples:
+|No Of Rooms|Location|Hotel Name   |Room Type|Price Per Night	|No Of Days|
+|2|"Sydney"|"Hotel Creek"|"Standard"	|"AUD $ 125"		|1			 |
+
+
+
+@TC-12
+Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "2 - Two"
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+And User click on the Radio Button to select the hotel
+And User click on the Continue Button
+Then User verify the Final price in float including gst 
+
+
+
+@TC-13
+Scenario Outline: To verify whether the data displayed is same as the selected data in Book hotel page
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location  '<Location>' 
+And User select the hotel  '<Hotel Name>'
+And User select Room type  '<Room Type>'
+And User select the Number of Rooms as "2 - Two"
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+And User click on the Radio Button to select the hotel
+And User click on the Continue Button
+When User enters first name
+And User enters last name
+And User enters billing address
+And User enters 16 digit credit card number
+And User selects the card type
+And User selects the expiry month
+And User selects the expiry year
+And User enters the cvv number
+And User clicks the book now button
+Then User verify that  all data are same in booking confirmation page '<Hotel Name>' '<Location>' '<Room Type>' '<Checkin Date>' '<Checkout Date>' '<No of Rooms>' '<No of Adults>' '<No of Children>'
+
+Examples:
+|Hotel Name   |Location|Room Type	|Checkin Date|Checkout Date|No of Rooms	|No of Adults|No of Children|
+|"Hotel Creek"|"Sydney"|"Standard"|"25/06/2019"|"26/06/2019" |2 					|1					 |"No Children" |
+
+
+@TC-14
+Scenario: To Verify Order number is generated in booking confirmation page
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location as "Sydney" 
+And User select the hotel as "Hotel Creek"
+And User select Room type as "Standard"
+And User select the Number of Rooms as "1 - One"
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+And User click on the Radio Button to select the hotel
+And User click on the Continue Button
+When User enters first name
+And User enters last name
+And User enters billing address
+And User enters 16 digit credit card number
+And User selects the card type
+And User selects the expiry month
+And User selects the expiry year
+And User enters the cvv number
+And User clicks the book now button
+Then User confirms that order no is generated or not in Booking Confirmation page
+And User Logout from Booking Confirmation Page
+
+@TC-15
+Scenario Outline: To Verify booking itinerary is reflecting the correct information in booking confirmation page
+Given User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the welcome page
+And User enter the Password in the welcome page 
+And User click on the Login button
+When User select the Location  '<Location>' 
+And User select the hotel  '<Hotel Name>'
+And User select Room type  '<Room Type>'
+And User select the Number of Rooms as "2 - Two"
+And User select the Check-in-Date as "25/06/2019" 
+And User select the Check-out-Date as "26/06/2019" 
+And User select the Adult per Room as "1 - One"
+And User click on the Search button
+And User click on the Radio Button to select the hotel
+And User click on the Continue Button
+When User enters first name
+And User enters last name
+And User enters billing address
+And User enters 16 digit credit card number
+And User selects the card type
+And User selects the expiry month
+And User selects the expiry year
+And User enters the cvv number
+And User clicks the book now button
+Then User confirm that order no is generated is same as in the booking confirmation page '<Hotel Name>' '<Location>' '<Room Type>''<Order ID>'
+
+Examples:
+|Hotel Name   |Location|Room Type	|Order ID|
+|"Hotel Creek"|"Sydney"|"Standard"|"W40I2ZJ75M"|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

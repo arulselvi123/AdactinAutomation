@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Cucumber" tests="15" started="15" failures="0" errors="2" ignored="0">
+  <testsuite name="com.cucumber.runner.TestRunner" time="25.541">
+    <testsuite name="Feature: AdactIn Automation End to End testing" time="25.541">
+      <testsuite name="Scenario Outline: To verify whether the data displayed is same as the selected data in Book hotel page" time="25.541">
+        <testsuite name="Examples:" time="25.541">
+          <testsuite name="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="25.541" incomplete="true">
+            <error>java.lang.RuntimeException&#13;
+	at com.selenium.baseclass.Cucumber.BaseClassMaven.getAttributeOfTheElement(BaseClassMaven.java:253)&#13;
+	at com.adactin.stepdefinition.StepDefinitionAdactIn.user_verify_that_all_data_are_same_in_booking_confirmation_page(StepDefinitionAdactIn.java:355)&#13;
+	at ✽.Then User verify that  all data are same in booking confirmation page '"Hotel Creek"' '"Sydney"' '"Standard"' '"25/06/2019"' '"26/06/2019"' '2' '1' '"No Children"'(AdactinAutomationEndtoEnd.feature:231)&#13;
+&#13;
+</error>
+            <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="1.361"/>
+            <testcase name="When User enter the User-name in the welcome page" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.796"/>
+            <testcase name="And User enter the Password in the welcome page" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="2.738"/>
+            <testcase name="And User click on the Login button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="1.339"/>
+            <testcase name="When User select the Location  '&quot;Sydney&quot;'" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.655"/>
+            <testcase name="And User select the hotel  '&quot;Hotel Creek&quot;'" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.791"/>
+            <testcase name="And User select Room type  '&quot;Standard&quot;'" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.858"/>
+            <testcase name="And User select the Number of Rooms as &quot;2 - Two&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.996"/>
+            <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.91"/>
+            <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.51"/>
+            <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="1.771"/>
+            <testcase name="And User click on the Search button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.531"/>
+            <testcase name="And User click on the Radio Button to select the hotel" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="1.753"/>
+            <testcase name="And User click on the Continue Button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="10.474"/>
+            <testcase name="Then User verify that  all data are same in booking confirmation page '&quot;Hotel Creek&quot;' '&quot;Sydney&quot;' '&quot;Standard&quot;' '&quot;25/06/2019&quot;' '&quot;26/06/2019&quot;' '2' '1' '&quot;No Children&quot;'" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;25/06/2019&quot; | &quot;26/06/2019&quot; | 2 | 1 | &quot;No Children&quot; |" time="0.058">
+              <error>java.lang.RuntimeException&#13;
+	at com.selenium.baseclass.Cucumber.BaseClassMaven.getAttributeOfTheElement(BaseClassMaven.java:253)&#13;
+	at com.adactin.stepdefinition.StepDefinitionAdactIn.user_verify_that_all_data_are_same_in_booking_confirmation_page(StepDefinitionAdactIn.java:355)&#13;
+	at ✽.Then User verify that  all data are same in booking confirmation page '"Hotel Creek"' '"Sydney"' '"Standard"' '"25/06/2019"' '"26/06/2019"' '2' '1' '"No Children"'(AdactinAutomationEndtoEnd.feature:231)&#13;
+&#13;
+</error>
+            </testcase>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

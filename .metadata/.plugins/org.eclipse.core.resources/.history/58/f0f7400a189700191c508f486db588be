@@ -1,0 +1,428 @@
+package com.adactin.stepdefinition;
+
+import java.awt.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import com.adactin.helper.FileReaderManager;
+import com.adactin.helper.PageObjectManager;
+import com.cucumber.runner.TestRunner;
+import com.selenium.baseclass.Cucumber.BaseClassMaven;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import junit.framework.Assert;
+
+public class StepDefinitionAdactIn extends BaseClassMaven {
+
+	public static WebDriver driver=TestRunner.driver;
+	
+	PageObjectManager pm=new PageObjectManager(driver);
+	
+	public static String hotelName;
+	public static String checkInDate;
+	public static String checkOutDate;
+	public static String roomType;
+	public static String bconOrderid;
+	
+	@Given("^User launch the AdactIn Hotel Reservation application using URL as in the test data$")
+	public void user_launch_the_AdactIn_Hotel_Reservation_application_using_URL_as_in_the_test_data() throws Throwable {
+ String url=FileReaderManager.getInstance().getCr().getUrl();
+getUrl(url);
+
+	}
+	
+	/*@When("^User enter the PriyaLakshmi in the welcome page$")
+	public void user_enter_the_PriyaLakshmi_in_the_welcome_page() throws Throwable {
+	  inputValue(pm.getLa().getUserName(), value);
+	}
+
+	@When("^User enter the India@(\\d+) in the welcome page$")
+	public void user_enter_the_India_in_the_welcome_page(int arg1) throws Throwable {
+	 
+	}*/
+
+
+	@When("^User enter the User-name in the welcome page$")
+	public void user_enter_the_User_name_in_the_welcome_page() throws Throwable {
+inputValue(pm.getLa().getUserName(), "PriyaLakshmi");
+
+	}
+
+	@When("^User enter the Password in the welcome page$")
+	public void user_enter_the_Password_in_the_welcome_page() throws Throwable {
+inputValue(pm.getLa().getPassWord(), "India@143");
+
+	}
+
+	@When("^User click on the Login button$")
+	public void user_click_on_the_Login_button() throws Throwable {
+clickOnTheElement(pm.getLa().getLoginBtn());
+
+	}
+
+	@When("^User select the Location as \"([^\"]*)\"$")
+	public void user_select_the_Location_as(String arg1) throws Throwable {
+dropDownForText(pm.getLa().getLocationOption(), arg1);
+
+	}
+
+	@When("^User select the hotel as \"([^\"]*)\"$")
+	public void user_select_the_hotel_as(String arg1) throws Throwable {
+dropDownForText(pm.getLa().getHotelOption(), arg1);
+
+	}
+
+	@When("^User select Room type as \"([^\"]*)\"$")
+	public void user_select_Room_type_as(String arg1) throws Throwable {
+dropDownForText(pm.getLa().getRoomType(), arg1);
+	}
+
+	@When("^User select the Number of Rooms as \"([^\"]*)\"$")
+	public void user_select_the_Number_of_Rooms_as(String arg1) throws Throwable {
+dropDownForText(pm.getLa().getNoOfRooms(), arg1);
+
+	}
+	@When("^User select the Check-in-Date as today plus (\\d+) date$")
+	public void user_select_the_Check_in_Date_as_today_plus_date(int arg1) throws Throwable {
+	     inputValue(pm.getLa().getCheckInDate(), "03/07/2019");
+	}
+
+	@When("^User select the Check-out-Date as today plus (\\d+) date$")
+	public void user_select_the_Check_out_Date_as_today_plus_date(int arg1) throws Throwable {
+	  inputValue(pm.getLa().getCheckOutDate(), "01/07/2019");  
+	}
+
+	@When("^User select the Check-in-Date as \"([^\"]*)\"$")
+	public void user_select_the_Check_in_Date_as(String arg1) throws Throwable {
+inputValue(pm.getLa().getCheckInDate(), arg1);
+	}
+
+	@When("^User select the Check-out-Date as \"([^\"]*)\"$")
+	public void user_select_the_Check_out_Date_as(String arg1) throws Throwable {
+inputValue(pm.getLa().getCheckOutDate(), arg1);
+	}
+
+	@When("^User select the Adult per Room as \"([^\"]*)\"$")
+	public void user_select_the_Adult_per_Room_as(String arg1) throws Throwable {
+dropDownForText(pm.getLa().getAdultsPerRoom(), arg1);
+
+	}
+	
+	@When("^User click on the Search button$")
+	public void user_click_on_the_Search_button() throws Throwable {
+	   clickOnTheElement(pm.getLa().getSearchBtn());
+	}
+
+	@Then("^User Verify the system saying \"([^\"]*)\"$")
+	public void user_Verify_the_system_saying(String arg1) throws Throwable {
+Assert.assertEquals("Check-In Date shall be before than Check-Out Date", getTextOfTheElement(pm.getLa().getCheckInDateGrtThanCheckOut()));
+
+	}	
+	
+
+	@Then("^User verify the selected Location should be same as Sydney in Select Hotel page$")
+	public void user_verify_the_selected_Location_should_be_same_as_Sydney_in_Select_Hotel_page() throws Throwable {
+ Assert.assertEquals("Sydney", getAttributeOfTheElement(pm.getLa().getLocationValidate()));
+
+	}
+
+	@Then("^User verify the Check-In  and Check-Out dates should be same as  in Select Hotel page$")
+	public void user_verify_the_Check_In_and_Check_Out_dates_should_be_same_as_in_Select_Hotel_page() throws Throwable {
+Assert.assertEquals("25/06/2019", getAttributeOfTheElement(pm.getLa().getChkInDateValidate()));
+Assert.assertEquals("26/06/2019", getAttributeOfTheElement(pm.getLa().getChkOutDateValidate()));
+
+
+
+	}
+	@Then("^Verify that no-of- rooms is reflected according to the number of rooms selected in search hotel page\\.$")
+	public void verify_that_no_of_rooms_is_reflected_according_to_the_number_of_rooms_selected_in_search_hotel_page() throws Throwable {
+
+Assert.assertEquals("1 Rooms", getAttributeOfTheElement(pm.getLa().getRoomValidate()));
+	}
+
+	@Then("^Verify that room type reflected is the same as selected in search hotel page\\.$")
+	public void verify_that_room_type_reflected_is_the_same_as_selected_in_search_hotel_page() throws Throwable {
+Assert.assertEquals("Standard", getAttributeOfTheElement(pm.getLa().getRoomTypeValidate()));
+
+	}
+
+	@Then("^Verify that total- price\\(excl\\.GST\\) is being calculated as \\(price-per-night\\*no- of-rooms\\*no-of-days\\)$")
+	public void verify_that_total_price_excl_GST_is_being_calculated_as_price_per_night_no_of_rooms_no_of_days() throws Throwable {
+		String noOfDays = getAttributeOfTheElement(pm.getLa().getNoOfDays());
+		String pricePerNyt = getAttributeOfTheElement(pm.getLa().getPricePerNyt());
+		String totalRooms = getAttributeOfTheElement(pm.getLa().getTotalRooms());
+		String totalPriceGST = getAttributeOfTheElement(pm.getLa().getTotalPriceGST());
+		
+		String noofdaytrim = noOfDays.substring(0, 1).trim();
+		System.out.println(noofdaytrim);
+		String pricetrim = pricePerNyt.substring(5).trim();
+		System.out.println(pricetrim);
+		String noofroomtrim = totalRooms.substring(0, 1).trim();
+		System.out.println(noofdaytrim);
+		int totalPrice = Integer.parseInt(noofroomtrim) * Integer.parseInt(noofdaytrim) * Integer.parseInt(pricetrim);
+		System.out.println(totalPrice);
+		String tprice = String.valueOf(totalPrice);
+		if (totalPriceGST.contains(tprice)) {
+			System.out.println("Total price is same as calculated");
+		} else {
+			System.out.println("Total price is not same");
+
+		}
+	}
+		@When("^User click on the Radio Button to select the hotel$")
+		public void user_click_on_the_Radio_Button_to_select_the_hotel() throws Throwable {
+clickOnTheElement(pm.getLa().getRadioButton());
+
+		}
+
+		@When("^User click on the Continue Button$")
+		public void user_click_on_the_Continue_Button() throws Throwable {
+
+clickOnTheElement(pm.getLa().getContBtn());
+		}
+
+		@When("^User enters first name$")
+		public void user_enters_first_name() throws Throwable {
+inputValue(pm.getLa().getFrstNameField(), "Lakshmi");
+
+		}
+
+		@When("^User enters last name$")
+		public void user_enters_last_name() throws Throwable {
+inputValue(pm.getLa().getLastNameField(), "Priya");
+
+		}
+
+		@When("^User enters billing address$")
+		public void user_enters_billing_address() throws Throwable {
+inputValue(pm.getLa().getBillAddressField(), "21, Sydney");
+
+		}
+
+		@When("^User enters (\\d+) digit credit card number$")
+		public void user_enters_digit_credit_card_number(int arg1) throws Throwable {
+inputValue(pm.getLa().getCcNoField(), "5555666677778888");
+
+		}
+
+		@When("^User selects the card type$")
+		public void user_selects_the_card_type() throws Throwable {
+dropDownForText(pm.getLa().getCcTypeField(), "American Express");
+
+		}
+
+		@When("^User selects the expiry month$")
+		public void user_selects_the_expiry_month() throws Throwable {
+
+dropDownForText(pm.getLa().getExpryMonth(), "December");
+		}
+
+		@When("^User selects the expiry year$")
+		public void user_selects_the_expiry_year() throws Throwable {
+dropDownForText(pm.getLa().getExpryYear(), "2022");
+
+		}
+
+		@When("^User enters the cvv number$")
+		public void user_enters_the_cvv_number() throws Throwable {
+
+inputValue(pm.getLa().getCcvNo(), "223");
+		}
+
+		@When("^User clicks the book now button$")
+		public void user_clicks_the_book_now_button() throws Throwable {
+clickOnTheElement(pm.getLa().getBookNowBtn());
+
+		}
+
+		@When("^User clicks the logout button in the booking confirmation page$")
+		public void user_clicks_the_logout_button_in_the_booking_confirmation_page() throws Throwable {
+clickOnTheElement(pm.getLa().getLogoutBtn());}
+	
+		@Then("^Verify the Total price is calculated including GST$")
+		public void verify_the_Total_price_is_calculated_including_GST() throws Throwable {
+			String noOfDays = getAttributeOfTheElement(pm.getLa().getTotalDayInBookPage());
+			String pricePerNyt = getAttributeOfTheElement(pm.getLa().getPricePerNightInBookPage());
+			String totalRooms = getAttributeOfTheElement(pm.getLa().getNoOfRoomBookHotel());
+			String finalBilledPrice = getAttributeOfTheElement(pm.getLa().getFinalBillInBookHotel());
+			
+			String noofdaytrim = noOfDays.substring(0, 1).trim();
+			System.out.println(noofdaytrim);
+			String pricetrim = pricePerNyt.substring(5).trim();
+			System.out.println(pricetrim);
+			String noofroomtrim = totalRooms.substring(0, 1).trim();
+			System.out.println(noofdaytrim);
+			
+			int finalPrice = (Integer.parseInt(noofroomtrim) * Integer.parseInt(noofdaytrim) * Integer.parseInt(pricetrim));
+			int gst = finalPrice / 10;
+			System.out.println("GST = " + gst);
+			
+			int price = gst + finalPrice;
+			String fPrice = String.valueOf(price);
+			if (finalBilledPrice.contains(fPrice)) {
+				System.out.println("Final price is same as calculated");
+			} else {
+				System.out.println("Final price is not same");
+			}
+		}
+		@When("^User select the Location  '\"([^\"]*)\"'$")
+		public void user_select_the_Location(String arg1) throws Throwable {
+		   dropDownForText(pm.getLa().getLocationOption(), arg1);
+		}
+
+		@When("^User select the hotel  '\"([^\"]*)\"'$")
+		public void user_select_the_hotel(String arg1) throws Throwable {
+		   dropDownForText(pm.getLa().getHotelOption(), arg1);
+		}
+
+		@When("^User select Room type  '\"([^\"]*)\"'$")
+		public void user_select_Room_type(String arg1) throws Throwable {
+		    dropDownForText(pm.getLa().getRoomType(), arg1);
+		}
+
+		
+
+		/*@When("^User select the Number of Rooms as '(\\d+)'$")
+		public void user_select_the_Number_of_Rooms_as(int arg1) throws Throwable {
+
+String valueOf = String.valueOf(arg1);
+dropDownForNum(pm.getLa().getNoOfRooms(), valueOf);
+		}*/
+		
+		@When("^User select the Number of Rooms  '(\\d+)'$")
+		public void user_select_the_Number_of_Rooms(int arg1) throws Throwable {
+			//String valueOf = String.valueOf(arg1);
+			//dropDownForText(pm.getLa().getNoOfRooms(), "valueOf");
+		}
+
+		@Then("^Verify the total data are same in booking confirmation page '\"([^\"]*)\"' '\"([^\"]*)\"' '\"([^\"]*)\"' '\"([^\"]*)\"' '(\\d+)'$")
+		public void verify_the_total_data_are_same_in_booking_confirmation_page(String arg1, String arg2, String arg3, String arg4, int arg5) throws Throwable {
+			String bookHotel = getAttributeOfTheElement(pm.getLa().getHotelNameValidateInBookPage());
+			System.out.println(bookHotel);
+			String bookLocation = getAttributeOfTheElement(pm.getLa().getLocaValidateInBookPage());
+			System.out.println(bookLocation);
+			String bookRoomType = getAttributeOfTheElement(pm.getLa().getRoomTypeValidInBookPage());
+			System.out.println(bookRoomType);
+			String bookTotalDays = getAttributeOfTheElement(pm.getLa().getTotalDayInBookPage());
+			System.out.println(bookTotalDays);
+			String booktotdaystrim = bookTotalDays.substring(0, 1).trim();
+			String ppNightDisplay = getAttributeOfTheElement(pm.getLa().getPricePerNightInBookPage());
+			System.out.println(ppNightDisplay);
+			Assert.assertEquals(arg2, bookHotel);
+			Assert.assertEquals(arg1, bookLocation);
+			Assert.assertEquals(arg3, bookRoomType);
+			Assert.assertEquals(arg4, ppNightDisplay);
+			String valueOf = String.valueOf(arg5);
+			if (booktotdaystrim.contains(valueOf)) {
+				System.out.println("Total day display is same as in booking confirmation page");
+			} else {
+				System.out.println("Total day display is not same");
+			}
+
+		}
+		@Then("^User verify the Final price in float including gst$")
+		public void user_verify_the_Final_price_in_float_including_gst() throws Throwable {
+			String noOfDays = getAttributeOfTheElement(pm.getLa().getTotalDayInBookPage());
+			String pricePerNyt = getAttributeOfTheElement(pm.getLa().getPricePerNightInBookPage());
+			String totalRooms = getAttributeOfTheElement(pm.getLa().gettwoRoomBookHotel());
+			String finalBilledPrice = getAttributeOfTheElement(pm.getLa().getFinalBillInBookHotel());
+			
+			String noofdaytrim = noOfDays.substring(0, 1).trim();
+			System.out.println(noofdaytrim);
+			String pricetrim = pricePerNyt.substring(5).trim();
+			System.out.println(pricetrim);
+			String noofroomtrim = totalRooms.substring(0, 1).trim();
+			System.out.println(noofroomtrim);
+			String finalBilledPricetrim = finalBilledPrice.substring(5).trim();
+			System.out.println(finalBilledPricetrim);
+			
+			int finalPrice = (Integer.parseInt(noofroomtrim) * Integer.parseInt(noofdaytrim) * Integer.parseInt(pricetrim));
+			System.out.println(finalPrice);
+			int gst = finalPrice / 10;
+			System.out.println("GST = " + gst);
+			
+			int price = gst + finalPrice;
+			System.out.println(price);
+			String fPrice = String.valueOf(price);
+			if (finalBilledPricetrim.contains(fPrice)) {
+				System.out.println("Final price is same as calculated");
+			} else 
+				System.out.println("Final price is not same");
+			}
+		
+		
+		@When("^User select the Number of Rooms  \"([^\"]*)\"$")
+		public void user_select_the_Number_of_Rooms(String arg1) throws Throwable {
+dropDownForNum(pm.getLa().getNoOfRooms(), arg1);	
+}		
+
+
+		@Then("^User verify that  all data are same in booking confirmation page '\"([^\"]*)\"' '\"([^\"]*)\"' '\"([^\"]*)\"' '\"([^\"]*)\"' '\"([^\"]*)\"' '(\\d+)' '(\\d+)' '\"([^\"]*)\"'$")
+		public void user_verify_that_all_data_are_same_in_booking_confirmation_page(String arg1, String arg2, String arg3, String arg4, String arg5, int arg6, int arg7, String arg8) throws Throwable {
+			String bconfHotel = getAttributeOfTheElement(pm.getLa().getHotelBookConfirm());
+			String bconfLocation =  getAttributeOfTheElement(pm.getLa().getLocationBookConfirm());
+			String bconfRoomType =  getAttributeOfTheElement(pm.getLa().getRoomTypeBookConfirm());
+			String bconfCheckin =  getAttributeOfTheElement(pm.getLa().getCheckInBookConfirm());
+			String bconfCheckout =  getAttributeOfTheElement(pm.getLa().getCheckOutBookConfirm());
+			String bconfNoofRooms =  getAttributeOfTheElement(pm.getLa().getTotalRoomBookConfirm());
+			String bconfAdults =  getAttributeOfTheElement(pm.getLa().getAdultBookConfirm());
+			String bconfChildren = getAttributeOfTheElement(pm.getLa().getChildrenBookConfirm());
+			Assert.assertEquals(arg1, bconfHotel);
+			Assert.assertEquals(arg2, bconfLocation);
+			Assert.assertEquals(arg3, bconfRoomType);
+			Assert.assertEquals(arg4, bconfCheckin);
+			Assert.assertEquals(arg5, bconfCheckout);
+			
+String stringNoOfRooms = String.valueOf(bconfNoofRooms);	
+String stringAdults = String.valueOf(bconfAdults);
+			if (stringNoOfRooms.equals(arg6)) {
+				System.out.println("No of rooms is same as selected");
+			} else {
+				System.out.println("No of rooms is not same as selected");
+			}
+			if (stringAdults.equals(arg7)) {
+				System.out.println("No of adults is same as selected");
+			} else {
+				System.out.println("No of adults is not same as selected");
+			}
+			if (arg8.contains(bconfChildren)) {
+				System.out.println("No of childeren is same as selected");
+			} else {
+				System.out.println("No of childeren is not same as selected");
+			}
+		}
+		@Then("^User confirms that order no is generated or not in Booking Confirmation page$")
+		public void user_confirms_that_order_no_is_generated_or_not_in_Booking_Confirmation_page() throws Throwable {
+		    String orderID = getAttributeOfTheElement(pm.getLa().getOrderNoBookConfirm());
+		    if(orderID!=null) {
+		    	System.out.println("OrderID is  generated"+orderID);
+		    }else {
+		    	System.out.println("OrderID is  generated");
+
+		    }
+		}
+
+		@Then("^User Logout from Booking Confirmation Page$")
+		public void user_Logout_from_Booking_Confirmation_Page() throws Throwable {
+		    clickOnTheElement(pm.getLa().getLogoutBookConfirm());
+		}
+		@Then("^User verify with existing order id '\"([^\"]*)\"' '\"([^\"]*)\"' '\"([^\"]*)\"''\"([^\"]*)\"'$")
+		public void user_verify_with_existing_order_id(String arg1, String arg2, String arg3, String arg4) throws Throwable {
+			List<WebElement> datas = driver.findElements(
+					By.xpath("//form[@id='booked_form']/table[@class='login']//tbody/tr[2]/td/table/tbody/tr/td/input"));
+			for (int i = 0; i < 14; i++) {
+				for (int j = 1; j <= 15; j++) {
+					String values = getElementAttributetext(datas.get(i));
+					int length = values.length();
+					// System.out.println(length);
+					//setValuetoExcel("AdactinBookingItenary", "AllDatas", j, i, values);
+					Thread.sleep(2000);
+				}
+			}
+			System.out.println("All values are copied to excel");
+		}
+}

@@ -1,0 +1,303 @@
+package com.selenium.pom;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage {
+	
+	public WebDriver driver;
+	public LoginPage(WebDriver ldriver) {
+	this.driver=ldriver;
+	PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(xpath="//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")
+	private WebElement signInBtn;
+	
+	public WebElement getSignInBtn() {
+		return signInBtn;
+	}
+	
+	@FindBy(id="email")
+	private WebElement emailAddress;
+	
+	@FindBy(id="passwd")
+	private WebElement passWd;
+	
+	@FindBy(xpath="//*[@id=\"SubmitLogin\"]/span")
+	private WebElement signIn;
+	
+	@FindBy(xpath="//h1[text()=\"My account\"]")
+	private WebElement myAccount;
+	
+	public WebElement getMyAccount() {
+	return myAccount;
+	}
+	
+	//SignOut
+	@FindBy(xpath="//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a")
+	private WebElement signOut;
+	
+	@FindBy(xpath="//a[@title=\"Women\"]")
+	private WebElement womenMenuBtn;
+	
+	public WebElement getWomenMenuBtn() {
+		return womenMenuBtn;
+	}
+	@FindBy(xpath="//a[text()=\"Blouses\"]")
+	private WebElement blouses;
+	
+	public WebElement getBlouses() {
+		return blouses;
+	}
+	@FindBy(xpath="//span[@class=\"cat-name\"]")
+	private WebElement blouseResult;
+	
+	public WebElement getBlouseResult() {
+		return blouseResult;
+
+	}
+	@FindBy(xpath="//img[@title=\"Blouse\"]")
+	private WebElement blouseImage;
+	
+	public WebElement getBlouseImage() {
+		return blouseImage;
+
+	}
+	@FindBy(xpath="//select[@id=\"selectProductSort\"]")
+	private WebElement sortBy;
+	
+	public WebElement getSortBy() {
+		return sortBy;
+
+	}
+	@FindBy(xpath="(//input[@class=\"checkbox\"])[1]")
+	private WebElement blouseSize;
+	
+	public WebElement getBlouseSize() {
+		return blouseSize;
+	}
+	
+	@FindBy(xpath="//span[text()=\"Add to cart\"]")
+	private WebElement adToCart;
+	
+	public WebElement getAdToCart() {
+		return adToCart;
+	}
+	@FindBy(xpath="//img[@title=\"Blouse\"]")
+	private WebElement mouseHoverBlouseImage;
+	
+	public WebElement getMouseHoverBlouseImage1() {
+		return mouseHoverBlouseImage;
+	}
+	@FindBy(xpath="(//input[@type=\"checkbox\"])[2]")
+	private WebElement blouseSizeCheckbox;
+	
+	public WebElement getBlouseSizeCheckbox() {
+		return blouseSizeCheckbox;
+	}
+	@FindBy(xpath="//*[@id=\"layer_cart\"]/div[1]/div[1]/h2")
+	private WebElement successfullyAdToCart;
+	
+	public WebElement getSuccessfullyAdToCart() {
+		return successfullyAdToCart;
+	}
+	@FindBy(xpath="//h1[@id=\"cart_title\"]")
+	private WebElement shoppingCartSummary;
+	
+	public WebElement getShoppingCartSummary() {
+		return shoppingCartSummary;
+	}
+	
+	@FindBy(xpath="//i[@class=\"icon-plus\"]")
+	private WebElement cartQuantity;
+	
+	public WebElement getCartQuantity() {
+		return cartQuantity;
+	}
+	@FindBy(xpath="//h1[text()=\"Addresses\"]")
+	private WebElement addressPageValidate;;
+	
+	public WebElement getAddressPageValidate() {
+		return addressPageValidate;
+	}
+	@FindBy(xpath="//textarea[@name=\"message\"]")
+	private WebElement commentAboutOrder;;
+	
+	public WebElement getCommentAboutOrder() {
+		return commentAboutOrder;
+	}
+	@FindBy(xpath="//h1[text()=\"Shipping\"]")
+	private WebElement shippingValidation;;
+	
+	public WebElement getShippingValidation() {
+		return shippingValidation;
+	}
+	
+	@FindBy(xpath="//h1[text()=\"Please choose your payment method\"]")
+	private WebElement paymentPageValidation;
+	
+	public WebElement getPaymentPageValidation() {
+		return paymentPageValidation;
+	}
+	@FindBy(xpath="//strong[text()=\"Your order on My Store is complete.\"]")
+	private WebElement paymentConfirmationValidate;
+	
+	public WebElement getPaymentConfirmationValidate() {
+		return paymentConfirmationValidate;
+	}
+	@FindBy(xpath="(//input[@type=\"checkbox\"])[2] and (//input[@type=\"checkbox\"])[3]")
+	private WebElement mediumLargeSize;
+	
+	public WebElement getMediumLargeSize() {
+		return mediumLargeSize;
+	}
+	@FindBy(xpath="//input[@id=\"layered_id_attribute_group_8\"]")
+	private WebElement whiteColor;
+	
+	public WebElement getWhiteColor() {
+		return whiteColor;
+	}
+	@FindBy(xpath="//input[@id=\"layered_id_feature_5\"]")
+	private WebElement cottonChkbox;
+	
+	public WebElement getCottonChkbox() {
+		return cottonChkbox;
+	}
+	@FindBy(xpath="//input[@id=\"layered_id_feature_11\"]")
+	private WebElement casualChkBox;
+	
+	public WebElement getCasualChkBox() {
+		return casualChkBox;
+	}
+	@FindBy(xpath="//input[@id=\"layered_id_feature_17\"]")
+	private WebElement shortSleeveChkBox;
+	
+	public WebElement getshortSleeveChkBox() {
+		return shortSleeveChkBox;
+	}
+	@FindBy(xpath="//input[@id=\"layered_quantity_1\"]")
+	private WebElement inStockChkBox;
+	
+	public WebElement getInStockChkBox() {
+		return inStockChkBox;
+	}
+	@FindBy(xpath="//input[@id=\"layered_manufacturer_1\"]")
+	private WebElement fashionManufactChkBox;
+	
+	public WebElement getFashionManufactChkBox() {
+		return fashionManufactChkBox;
+	}
+	@FindBy(xpath="//input[@id=\"layered_condition_new\"]")
+	private WebElement newChkBox;
+	
+	public WebElement getNewChkBox() {
+		return newChkBox;
+	}
+	@FindBy(xpath="//a[@title=\"Delivery\"]")
+	private WebElement newChkBox;
+	
+	public WebElement getNewChkBox() {
+		return newChkBox;
+	}
+	@FindBy(xpath="//input[@id=\"layered_condition_new\"]")
+	private WebElement newChkBox;
+	
+	public WebElement getNewChkBox() {
+		return newChkBox;
+	}
+	@FindBy(xpath="//a[@title=\"Legal Notice\"]")
+	private WebElement newChkBox;
+	
+	public WebElement getNewChkBox() {
+		return newChkBox;
+	}
+	@FindBy(xpath="//input[@id=\"layered_condition_new\"]")
+	private WebElement newChkBox;
+	
+	public WebElement getNewChkBox() {
+		return newChkBox;
+	}
+	@FindBy(xpath="(//a[@title=\"Terms and conditions of use\"])[1]")
+	private WebElement newChkBox;
+	
+	public WebElement getNewChkBox() {
+		return newChkBox;
+	}
+	@FindBy(xpath="//input[@id=\"layered_condition_new\"]")
+	private WebElement newChkBox;
+	
+	public WebElement getNewChkBox() {
+		return newChkBox;
+	}
+	@FindBy(xpath="(//a[@title=\"About us\"])[1]")
+	private WebElement newChkBox;
+	
+	public WebElement getNewChkBox() {
+		return newChkBox;
+	}
+	@FindBy(xpath="//input[@id=\"layered_condition_new\"]")
+	private WebElement newChkBox;
+	
+	public WebElement getNewChkBox() {
+		return newChkBox;
+	}
+	@FindBy(xpath="//a[@title=\"Secure payment\"]")
+	private WebElement newChkBox;
+	
+	public WebElement getNewChkBox() {
+		return newChkBox;
+	}
+	@FindBy(xpath="//input[@id=\"layered_condition_new\"]")
+	private WebElement newChkBox;
+	
+	public WebElement getNewChkBox() {
+		return newChkBox;
+	}
+	@FindBy(xpath="(//a[@title=\"Our stores\"])[1]")
+	private WebElement newChkBox;
+	
+	public WebElement getNewChkBox() {
+		return newChkBox;
+	}
+	@FindBy(xpath="//input[@id=\"layered_condition_new\"]")
+	private WebElement newChkBox;
+	
+	public WebElement getNewChkBox() {
+		return newChkBox;
+	}
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	
+	public WebElement getSignIn1() {
+		return signInBtn;
+	}
+
+
+	public WebElement getEmailAddress() {
+		return emailAddress;
+	}
+
+	public WebElement getPassWd() {
+		return passWd;
+	}
+
+	public WebElement getSignIn() {
+		return signIn;
+	}
+
+	
+	public WebElement getSignOut() {
+		return signOut;
+	}
+	
+}
+
+
+
+

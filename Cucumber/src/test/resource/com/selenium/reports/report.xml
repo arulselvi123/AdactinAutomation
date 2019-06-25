@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.925851">
+<testcase classname="AdactIn Automation End to End testing" name="To check whether “search order id” query is working and displaying the relevant details." time="21.925851">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given User launch the AdactIn Hotel Reservation application using URL as in the test data.passed
+When User enter the User-name in the welcome page...........................passed
+And User enter the Password in the welcome page.............................passed
+And User click on the Login button..........................................passed
+When User select the Location  '"Sydney"'...................................passed
+And User select the hotel  '"Hotel Creek"'..................................passed
+And User select Room type  '"Standard"'.....................................passed
+And User select the Number of Rooms as "2 - Two"............................passed
+And User select the Check-in-Date as "25/06/2019"...........................passed
+And User select the Check-out-Date as "26/06/2019"..........................passed
+And User select the Adult per Room as "1 - One".............................passed
+And User click on the Search button.........................................passed
+And User click on the Radio Button to select the hotel......................passed
+And User click on the Continue Button.......................................passed
+When User enters first name.................................................passed
+And User enters last name...................................................passed
+And User enters billing address.............................................passed
+And User enters 16 digit credit card number.................................passed
+And User selects the card type..............................................passed
+And User selects the expiry month...........................................passed
+And User selects the expiry year............................................passed
+And User enters the cvv number..............................................passed
+And User clicks the book now button.........................................passed
+And User clicks the My Itinerary button.....................................passed
+Then User verify that the relevant details are displayed....................undefined
+]]></failure>
+</testcase>
+</testsuite>

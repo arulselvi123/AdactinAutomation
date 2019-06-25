@@ -1,0 +1,17 @@
+@AdactIn
+Feature: AdactIn application testing
+Test scenarios includes Login, Check-In & Check-Out date
+
+Feature:To verify valid login details
+Given: User launch the AdactIn Hotel Reservation application using URL as in the test data
+When User enter the User-name in the authentication page
+And User enter the Password in the authentication page as in the test data
+And User click on the Login button 
+Then User verify the login result in the next page header
+
+@Ignore
+Feature: To verify whether the check-out date field accepts a later date than check- in date.
+When User select Location as in the test data
+And User select hotel in the test data
+And User select Room type 
+And User select the Number of Rooms as in the test data

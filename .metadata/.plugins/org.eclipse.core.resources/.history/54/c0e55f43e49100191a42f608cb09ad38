@@ -1,0 +1,145 @@
+package com.selenium.pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class RegisterPage {
+	public WebDriver driver;
+	public RegisterPage(WebDriver ldriver) {
+		this.driver=ldriver;
+		PageFactory.initElements(driver, this);
+		
+	}
+
+	public WebElement getNewEmailID() {
+		return NewEmailID;
+	}
+	public WebElement getCreateanaccount() {
+		return createanaccount;
+	}
+	public WebElement getTitleradiobtn() {
+		return Titleradiobtn;
+	}
+	public WebElement getFirstname() {
+		return firstname;
+	}
+	public WebElement getLastname() {
+		return lastname;
+	}
+	public WebElement getEnterEmailID() {
+		return enterEmailID;
+	}
+	public WebElement getEnterpassword() {
+		return enterpassword;
+	}
+	public WebElement getDays() {
+		return Days;
+	}
+	public WebElement getMonth() {
+		return Month;
+	}
+	public WebElement getYear() {
+		return year;
+	}
+	public WebElement getSignupnewsletter() {
+		return signupnewsletter;
+	}
+	public WebElement getReceivespecialoffers() {
+		return receivespecialoffers;
+	}
+	public WebElement getYouraddressfirstname() {
+		return youraddressfirstname;
+	}
+	public WebElement getYouraddresslastname() {
+		return youraddresslastname;
+	}
+	public WebElement getCompany() {
+		return company;
+	}
+	public WebElement getAddress() {
+		return address;
+	}
+	public WebElement getCity() {
+		return city;
+	}
+	public WebElement getState() {
+		return state;
+	}
+	public WebElement getZiporpostalcode() {
+		return ziporpostalcode;
+	}
+	public WebElement getCountry() {
+		return country;
+	}
+	public WebElement getAdditionalinformation() {
+		return additionalinformation;
+	}
+	public WebElement getHomephone() {
+		return homephone;
+	}
+	public WebElement getMobilephone() {
+		return mobilephone;
+	}
+	public WebElement getAliasaddress() {
+		return aliasaddress;
+	}
+	public WebElement getRegister() {
+		return register;
+	}
+
+	@FindBy(xpath="//input[@id=\"email_create\"]")
+	private WebElement NewEmailID;
+	@FindBy(xpath="//button[@class=\"btn btn-default button button-medium exclusive\"]/span")
+	private WebElement createanaccount;
+	@FindBy(xpath="//label[@for=\"id_gender2\"]")
+	private WebElement Titleradiobtn;
+	@FindBy(xpath="//input[@id=\"customer_firstname\"]")
+	private WebElement firstname;
+	@FindBy(xpath="//input[@id=\"customer_lastname\"]")
+	private WebElement lastname;
+	@FindBy(xpath="//input[@id=\"email\"]")
+	private WebElement enterEmailID;
+	@FindBy(xpath="//input[@id=\"passwd\"]")
+	private WebElement enterpassword;
+	@FindBy(xpath="//select[@id=\"days\"]")
+	private WebElement Days;
+	@FindBy(xpath="//select[@id=\"months\"]")
+	private WebElement Month;
+	@FindBy(xpath="//select[@id=\"years\"]")
+	private WebElement year;
+	@FindBy(xpath="//input[@id=\"newsletter\"]")
+	private WebElement signupnewsletter;
+	@FindBy(xpath="//input[@id=\"optin\"]")
+	private WebElement receivespecialoffers;
+	@FindBy(xpath="//input[@id=\"firstname\"]")
+	private WebElement youraddressfirstname;
+	@FindBy(xpath="//input[@id=\"lastname\"]")
+	private WebElement youraddresslastname;
+	@FindBy(xpath="//input[@id=\"company\"] ")
+	private WebElement company;
+	
+	
+	@FindBy(xpath="//input[@id=\"address1\"] ")
+	private WebElement address;
+	@FindBy(xpath="//input[@id=\"city\"] ")
+	private WebElement city;
+	@FindBy(xpath="//select[@id=\"id_state\"]")
+	private WebElement state;
+	@FindBy(xpath="//input[@id=\"postcode\"]")
+	private WebElement ziporpostalcode;
+	@FindBy(xpath="//select[@id=\"id_country\"]")
+	private WebElement country;
+	@FindBy(xpath="//textarea[@id=\"other\"]")
+	private WebElement additionalinformation;
+	@FindBy(xpath="//input[@id=\"phone\"] ")
+	private WebElement homephone;
+	@FindBy(xpath="//input[@id=\"phone_mobile\"]")
+	private WebElement mobilephone;
+	@FindBy(xpath="//input[@id=\"alias\"] ")
+	private WebElement aliasaddress;
+	@FindBy(xpath="//button[@id=\"submitAccount\"]")
+	private WebElement register;
+}
+

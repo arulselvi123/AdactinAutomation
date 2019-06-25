@@ -1,0 +1,22 @@
+package com.selenium.baseclass.Cucumber;
+
+import java.util.Scanner;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+Scanner sc=new Scanner(System.in);
+System.out.println("Verify the Total Price excl GST");
+int price=sc.nextInt();
+int nroom=sc.nextInt();
+int nday=sc.nextInt();
+int totalprice= price * nroom * nday;
+System.out.println("Total Price is"+totalprice);
+
+}
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Cucumber" tests="24" started="24" failures="0" errors="2" ignored="0">
+  <testsuite name="com.cucumber.runner.TestRunner" time="21.175">
+    <testsuite name="Feature: AdactIn Automation End to End testing" time="21.175">
+      <testsuite name="Scenario Outline: To Verify booking itinerary is reflecting the correct information in booking confirmation page" time="21.175">
+        <testsuite name="Examples:" time="21.175">
+          <testsuite name="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="21.175" incomplete="true">
+            <error>cucumber.api.PendingException: TODO: implement me&#13;
+	at cucumber.runtime.junit.JUnitReporter.addFailure(JUnitReporter.java:150)&#13;
+	at cucumber.runtime.junit.JUnitReporter.addFailureOrIgnoreStep(JUnitReporter.java:138)&#13;
+	at cucumber.runtime.junit.JUnitReporter.result(JUnitReporter.java:98)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:282)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+&#13;
+</error>
+            <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="1.199"/>
+            <testcase name="When User enter the User-name in the welcome page" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.732"/>
+            <testcase name="And User enter the Password in the welcome page" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="1.713"/>
+            <testcase name="And User click on the Login button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.857"/>
+            <testcase name="When User select the Location  '&quot;Sydney&quot;'" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.755"/>
+            <testcase name="And User select the hotel  '&quot;Hotel Creek&quot;'" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.851"/>
+            <testcase name="And User select Room type  '&quot;Standard&quot;'" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.756"/>
+            <testcase name="And User select the Number of Rooms as &quot;2 - Two&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="1.091"/>
+            <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.893"/>
+            <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.553"/>
+            <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="2.004"/>
+            <testcase name="And User click on the Search button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.618"/>
+            <testcase name="And User click on the Radio Button to select the hotel" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="2.009"/>
+            <testcase name="And User click on the Continue Button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="1.027"/>
+            <testcase name="When User enters first name" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.806"/>
+            <testcase name="And User enters last name" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.915"/>
+            <testcase name="And User enters billing address" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.975"/>
+            <testcase name="And User enters 16 digit credit card number" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.686"/>
+            <testcase name="And User selects the card type" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.736"/>
+            <testcase name="And User selects the expiry month" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.73"/>
+            <testcase name="And User selects the expiry year" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.705"/>
+            <testcase name="And User enters the cvv number" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.486"/>
+            <testcase name="And User clicks the book now button" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.009"/>
+            <testcase name="Then User confirm that order no is generated is same as in the booking confirmation page '&quot;Hotel Creek&quot;' '&quot;Sydney&quot;' '&quot;Standard&quot;''&quot;W40I2ZJ75M&quot;'" classname="| &quot;Hotel Creek&quot; | &quot;Sydney&quot; | &quot;Standard&quot; | &quot;W40I2ZJ75M&quot; |" time="0.068">
+              <error>cucumber.api.PendingException: TODO: implement me&#13;
+	at cucumber.runtime.junit.JUnitReporter.addFailure(JUnitReporter.java:150)&#13;
+	at cucumber.runtime.junit.JUnitReporter.addFailureOrIgnoreStep(JUnitReporter.java:138)&#13;
+	at cucumber.runtime.junit.JUnitReporter.result(JUnitReporter.java:98)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:282)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+&#13;
+</error>
+            </testcase>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

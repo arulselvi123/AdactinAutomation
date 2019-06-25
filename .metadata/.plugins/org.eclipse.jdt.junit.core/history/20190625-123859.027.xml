@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Cucumber" tests="15" started="0" failures="0" errors="1" ignored="0">
+  <testsuite name="com.cucumber.runner.TestRunner" incomplete="true">
+    <error>java.lang.RuntimeException&#13;
+	at com.selenium.baseclass.Cucumber.BaseClassMaven.browserLaunch(BaseClassMaven.java:53)&#13;
+	at com.cucumber.runner.TestRunner.setup(TestRunner.java:35)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+&#13;
+</error>
+    <testsuite name="Feature: AdactIn Automation End to End testing" incomplete="true">
+      <testsuite name="Scenario Outline: To check Hotel name, Location, room type, Total Day, price per night are same in Booking confirmation page as they were selected in previous screen" incomplete="true">
+        <testsuite name="Examples:" incomplete="true">
+          <testsuite name="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD $ 125&quot; | &quot;1&quot; |" incomplete="true">
+            <testcase name="Given User launch the AdactIn Hotel Reservation application using URL as in the test data" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="When User enter the User-name in the welcome page" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="And User enter the Password in the welcome page" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="And User click on the Login button" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="When User select the Location  '&quot;Sydney&quot;'" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="And User select the hotel  '&quot;Hotel Creek&quot;'" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="And User select Room type  '&quot;Standard&quot;'" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="And User select the Number of Rooms  '2'" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="And User select the Check-in-Date as &quot;25/06/2019&quot;" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="And User select the Check-out-Date as &quot;26/06/2019&quot;" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="And User select the Adult per Room as &quot;1 - One&quot;" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="And User click on the Search button" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="And User click on the Radio Button to select the hotel" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="And User click on the Continue Button" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+            <testcase name="Then Verify the total data are same in booking confirmation page '&quot;Sydney&quot;' '&quot;Hotel Creek&quot;' '&quot;Standard&quot;' '&quot;AUD $ 125&quot;' '&quot;1&quot;'" classname="| 2 | &quot;Sydney&quot; | &quot;Hotel Creek&quot; | &quot;Standard&quot; | &quot;AUD . 125&quot; | &quot;1&quot; |" incomplete="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>
