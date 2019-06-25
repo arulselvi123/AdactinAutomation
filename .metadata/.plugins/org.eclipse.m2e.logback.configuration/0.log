@@ -4356,3 +4356,11 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.vimalselv
 2019-06-25 13:20:59,928 [Worker-342: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Gautham\eclipse-workspace\SeleniumInstall\Cucumber\src\main\resources
 2019-06-25 13:20:59,930 [Worker-342: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-06-25 13:20:59,944 [Worker-342: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2019-06-25 12:29:34,942 [Worker-345: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-25 12:29:34,944 [Worker-345: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Gautham\eclipse-workspace\SeleniumInstall\Cucumber\src\main\resources
+2019-06-25 12:29:34,947 [Worker-345: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-25 12:29:34,954 [Worker-345: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2019-06-25 12:40:52,928 [Worker-347: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-25 12:40:52,929 [Worker-347: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Gautham\eclipse-workspace\SeleniumInstall\Cucumber\src\main\resources
+2019-06-25 12:40:52,932 [Worker-347: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-25 12:40:52,944 [Worker-347: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
