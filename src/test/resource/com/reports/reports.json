@@ -1,0 +1,231 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Verify the Login functionality of the application",
+        "description": "",
+        "id": "automation-practise-application-end-to-end-testing;verify-the-login-functionality-of-the-application;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9642643775,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Launch the automation practise application",
+            "match": {
+              "location": "StepDefinition1.user_Launch_the_automation_practise_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5246821757,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on the sigin button in the header",
+            "match": {
+              "location": "StepDefinition1.user_click_on_the_sigin_button_in_the_header()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 181887292,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter the \"arn@gmail.com\" in the email address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "arn@gmail.com",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinition1.user_enter_the_in_the_email_address_field(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 123035909,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enter the \"1456\" in the password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1456",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinition1.user_enter_the_in_the_password_field(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1765754399,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on the sigin button",
+            "match": {
+              "location": "StepDefinition1.user_click_on_the_sigin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90880168834,
+              "error_message": "java.lang.RuntimeException\r\n\tat com.selenium.baseclass.BaseClass.clickOnTheElement(BaseClass.java:143)\r\n\tat com.cucumber.stepdefinition1.StepDefinition1.user_click_on_the_signout_button(StepDefinition1.java:66)\r\n\tat ✽.And User click on the signout button(AutomationPractiseSmoke.feature:11)\r\n",
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User click on the signout button",
+            "match": {
+              "location": "StepDefinition1.user_click_on_the_signout_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@demo"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Verify the Login functionality of the application",
+        "description": "",
+        "id": "automation-practise-application-end-to-end-testing;verify-the-login-functionality-of-the-application;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3242133482,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Launch the automation practise application",
+            "match": {
+              "location": "StepDefinition1.user_Launch_the_automation_practise_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3213771291,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on the sigin button in the header",
+            "match": {
+              "location": "StepDefinition1.user_click_on_the_sigin_button_in_the_header()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164280115,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter the \"arjunn@gmail.com\" in the email address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "arjunn@gmail.com",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinition1.user_enter_the_in_the_email_address_field(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117908227,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enter the \"126\" in the password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "126",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinition1.user_enter_the_in_the_password_field(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2133884781,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on the sigin button",
+            "match": {
+              "location": "StepDefinition1.user_click_on_the_sigin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2643729457,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click on the signout button",
+            "match": {
+              "location": "StepDefinition1.user_click_on_the_signout_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@demo"
+          }
+        ]
+      }
+    ],
+    "name": "Automation Practise application end to end testing",
+    "description": "      test scenarios includes Login,search,order selecting",
+    "id": "automation-practise-application-end-to-end-testing",
+    "keyword": "Feature",
+    "uri": "AutomationPractiseSmoke.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@demo"
+      }
+    ]
+  }
+]

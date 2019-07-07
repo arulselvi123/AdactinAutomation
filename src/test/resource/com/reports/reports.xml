@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="119.356019">
+<testcase classname="Automation Practise application end to end testing" name="Verify the Login functionality of the application" time="107.840312">
+<failure message="java.lang.RuntimeException&#13;&#10;&#9;at com.selenium.baseclass.BaseClass.clickOnTheElement(BaseClass.java:143)&#13;&#10;&#9;at com.cucumber.stepdefinition1.StepDefinition1.user_click_on_the_signout_button(StepDefinition1.java:66)&#13;&#10;&#9;at ✽.And User click on the signout button(AutomationPractiseSmoke.feature:11)&#13;&#10;"><![CDATA[Given User Launch the automation practise application.......................passed
+When User click on the sigin button in the header...........................passed
+And User enter the "arn@gmail.com" in the email address field...............passed
+And User enter the "1456" in the password field.............................passed
+And User click on the sigin button..........................................passed
+And User click on the signout button........................................failed
+
+StackTrace:
+java.lang.RuntimeException
+	at com.selenium.baseclass.BaseClass.clickOnTheElement(BaseClass.java:143)
+	at com.cucumber.stepdefinition1.StepDefinition1.user_click_on_the_signout_button(StepDefinition1.java:66)
+	at ✽.And User click on the signout button(AutomationPractiseSmoke.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="Automation Practise application end to end testing" name="Verify the Login functionality of the application 2" time="11.515707">
+<system-out><![CDATA[Given User Launch the automation practise application.......................passed
+When User click on the sigin button in the header...........................passed
+And User enter the "arjunn@gmail.com" in the email address field............passed
+And User enter the "126" in the password field..............................passed
+And User click on the sigin button..........................................passed
+And User click on the signout button........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
