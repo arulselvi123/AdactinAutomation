@@ -11,5 +11,5 @@ And User click on the sigin button
 And User click on the signout button
 Examples:
 |Username        |Password|
-|arn@gmail.com |1456|
-|arjunn@gmail.com|126|
+|arjun@gmail.com |123456|
+|arjunn@gmail.com|123456|

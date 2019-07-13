@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.cucumber.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.994 sec <<< FAILURE! - in com.cucumber.runner.TestRunner
+initializationError(com.cucumber.runner.TestRunner)  Time elapsed: 0.007 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: Lorg/openqa/selenium/WebDriver;
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WebDriver
+

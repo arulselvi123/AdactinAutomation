@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9642643775,
+              "duration": 19349132132,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 5246821757,
+              "duration": 7758841996,
               "status": "passed"
             },
             "line": 7,
@@ -36,15 +36,15 @@
           },
           {
             "result": {
-              "duration": 181887292,
+              "duration": 4196122088,
               "status": "passed"
             },
             "line": 8,
-            "name": "User enter the \"arn@gmail.com\" in the email address field",
+            "name": "User enter the \"arjun@gmail.com\" in the email address field",
             "match": {
               "arguments": [
                 {
-                  "val": "arn@gmail.com",
+                  "val": "arjun@gmail.com",
                   "offset": 16
                 }
               ],
@@ -57,15 +57,15 @@
           },
           {
             "result": {
-              "duration": 123035909,
+              "duration": 591429050,
               "status": "passed"
             },
             "line": 9,
-            "name": "User enter the \"1456\" in the password field",
+            "name": "User enter the \"123456\" in the password field",
             "match": {
               "arguments": [
                 {
-                  "val": "1456",
+                  "val": "123456",
                   "offset": 16
                 }
               ],
@@ -78,7 +78,7 @@
           },
           {
             "result": {
-              "duration": 1765754399,
+              "duration": 2354894414,
               "status": "passed"
             },
             "line": 10,
@@ -90,9 +90,8 @@
           },
           {
             "result": {
-              "duration": 90880168834,
-              "error_message": "java.lang.RuntimeException\r\n\tat com.selenium.baseclass.BaseClass.clickOnTheElement(BaseClass.java:143)\r\n\tat com.cucumber.stepdefinition1.StepDefinition1.user_click_on_the_signout_button(StepDefinition1.java:66)\r\n\tat ✽.And User click on the signout button(AutomationPractiseSmoke.feature:11)\r\n",
-              "status": "failed"
+              "duration": 2736604447,
+              "status": "passed"
             },
             "line": 11,
             "name": "User click on the signout button",
@@ -119,7 +118,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3242133482,
+              "duration": 3920373586,
               "status": "passed"
             },
             "line": 6,
@@ -131,7 +130,7 @@
           },
           {
             "result": {
-              "duration": 3213771291,
+              "duration": 2092546718,
               "status": "passed"
             },
             "line": 7,
@@ -143,7 +142,7 @@
           },
           {
             "result": {
-              "duration": 164280115,
+              "duration": 298594031,
               "status": "passed"
             },
             "line": 8,
@@ -164,15 +163,15 @@
           },
           {
             "result": {
-              "duration": 117908227,
+              "duration": 237479764,
               "status": "passed"
             },
             "line": 9,
-            "name": "User enter the \"126\" in the password field",
+            "name": "User enter the \"123456\" in the password field",
             "match": {
               "arguments": [
                 {
-                  "val": "126",
+                  "val": "123456",
                   "offset": 16
                 }
               ],
@@ -185,7 +184,7 @@
           },
           {
             "result": {
-              "duration": 2133884781,
+              "duration": 1989904334,
               "status": "passed"
             },
             "line": 10,
@@ -197,7 +196,7 @@
           },
           {
             "result": {
-              "duration": 2643729457,
+              "duration": 2557649195,
               "status": "passed"
             },
             "line": 11,

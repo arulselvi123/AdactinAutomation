@@ -66,8 +66,8 @@ formatter.examples({
     },
     {
       "cells": [
-        "arn@gmail.com",
-        "1456"
+        "arjun@gmail.com",
+        "123456"
       ],
       "line": 14,
       "id": "automation-practise-application-end-to-end-testing;verify-the-login-functionality-of-the-application;;2"
@@ -75,7 +75,7 @@ formatter.examples({
     {
       "cells": [
         "arjunn@gmail.com",
-        "126"
+        "123456"
       ],
       "line": 15,
       "id": "automation-practise-application-end-to-end-testing;verify-the-login-functionality-of-the-application;;3"
@@ -109,7 +109,7 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "User enter the \"arn@gmail.com\" in the email address field",
+  "name": "User enter the \"arjun@gmail.com\" in the email address field",
   "matchedColumns": [
     0
   ],
@@ -117,7 +117,7 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "User enter the \"1456\" in the password field",
+  "name": "User enter the \"123456\" in the password field",
   "matchedColumns": [
     1
   ],
@@ -137,56 +137,55 @@ formatter.match({
   "location": "StepDefinition1.user_Launch_the_automation_practise_application()"
 });
 formatter.result({
-  "duration": 9642643775,
+  "duration": 19349132132,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition1.user_click_on_the_sigin_button_in_the_header()"
 });
 formatter.result({
-  "duration": 5246821757,
+  "duration": 7758841996,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "arn@gmail.com",
+      "val": "arjun@gmail.com",
       "offset": 16
     }
   ],
   "location": "StepDefinition1.user_enter_the_in_the_email_address_field(String)"
 });
 formatter.result({
-  "duration": 181887292,
+  "duration": 4196122088,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "1456",
+      "val": "123456",
       "offset": 16
     }
   ],
   "location": "StepDefinition1.user_enter_the_in_the_password_field(String)"
 });
 formatter.result({
-  "duration": 123035909,
+  "duration": 591429050,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition1.user_click_on_the_sigin_button()"
 });
 formatter.result({
-  "duration": 1765754399,
+  "duration": 2354894414,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition1.user_click_on_the_signout_button()"
 });
 formatter.result({
-  "duration": 90880168834,
-  "error_message": "java.lang.RuntimeException\r\n\tat com.selenium.baseclass.BaseClass.clickOnTheElement(BaseClass.java:143)\r\n\tat com.cucumber.stepdefinition1.StepDefinition1.user_click_on_the_signout_button(StepDefinition1.java:66)\r\n\tat ✽.And User click on the signout button(AutomationPractiseSmoke.feature:11)\r\n",
-  "status": "failed"
+  "duration": 2736604447,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 15,
@@ -222,7 +221,7 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "User enter the \"126\" in the password field",
+  "name": "User enter the \"123456\" in the password field",
   "matchedColumns": [
     1
   ],
@@ -242,14 +241,14 @@ formatter.match({
   "location": "StepDefinition1.user_Launch_the_automation_practise_application()"
 });
 formatter.result({
-  "duration": 3242133482,
+  "duration": 3920373586,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition1.user_click_on_the_sigin_button_in_the_header()"
 });
 formatter.result({
-  "duration": 3213771291,
+  "duration": 2092546718,
   "status": "passed"
 });
 formatter.match({
@@ -262,34 +261,34 @@ formatter.match({
   "location": "StepDefinition1.user_enter_the_in_the_email_address_field(String)"
 });
 formatter.result({
-  "duration": 164280115,
+  "duration": 298594031,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "126",
+      "val": "123456",
       "offset": 16
     }
   ],
   "location": "StepDefinition1.user_enter_the_in_the_password_field(String)"
 });
 formatter.result({
-  "duration": 117908227,
+  "duration": 237479764,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition1.user_click_on_the_sigin_button()"
 });
 formatter.result({
-  "duration": 2133884781,
+  "duration": 1989904334,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition1.user_click_on_the_signout_button()"
 });
 formatter.result({
-  "duration": 2643729457,
+  "duration": 2557649195,
   "status": "passed"
 });
 });
